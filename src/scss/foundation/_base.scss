@@ -1,0 +1,46 @@
+/*****-------------------------------
+    Common initial setting
+-------------------------------*****/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    @include font-family("yugothic");
+    font-weight: 500;
+    overflow-x: hidden;
+    color: $main-font;
+    font-size: 14px;
+    -webkit-text-size-adjust: 100%;
+    letter-spacing: 1.2px;
+    @include mq-up(lg) {
+        font-size: 16px;
+    }
+}
+
+main {
+    display: block;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+video {
+    display: block;
+}
+
+input {
+    display: none;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+}

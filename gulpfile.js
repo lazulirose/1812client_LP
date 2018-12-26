@@ -12,7 +12,7 @@ var img = require("gulp-imagemin");
 
 gulp.task("default", ["server"], function () {
     gulp.watch("src/pug/**/*.pug", ["pug"]);
-    gulp.watch("src/js/**/*.js", "!src/js/min/**/*.js", ["js"]);
+    gulp.watch(["src/js/**/*.js", "!src/js/min/**/*.js"],["js"]);
     gulp.watch("src/scss/**/*.scss", ["scss"]);
     gulp.watch("src/images/**/*.jpg", ["img"]);
 });
@@ -24,18 +24,18 @@ gulp.task("server", function () {
     });
 });
 gulp.task("pug", function () {
-    gulp.src("src/pug/**/*.pug", "!src/pug/**/_*.pug")
+    gulp.src(["src/pug/**/*.pug", "!src/pug/**/_*.pug"])
         .pipe(pug({
             pretty: true
         }))
         .pipe(gulp.dest("src/"));
 });
 gulp.task("js", function () {
-    gulp.src("src/js/**/*.js", "!src/js/min/**/*.js")
+    gulp.src(["src/js/**/*.js", "!src/js/min/**/*.js"])
         .pipe(plumber())
         .pipe(scss())
         .pipe(autoprefixer())
-        .pipe(gulp.dest("src/css"))
+        .pipe(gulp.dest("src/js"))
         .pipe(rename({
             suffix: ".min"
         }))
@@ -47,7 +47,7 @@ gulp.task("js", function () {
 });
 
 gulp.task("scss", function () {
-    gulp.src("src/scss/**/*scss")
+    gulp.src("src/scss/**/*.scss")
         .pipe(plumber())
         .pipe(scss())
         .pipe(autoprefixer())

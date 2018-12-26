@@ -1,0 +1,209 @@
+/*****-------------------------------
+    JavaScript interactions
+-------------------------------*****/
+
+#is-open {
+    @include mq-down(lg) {
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        background-color: rgba(#fff, .9);
+    }
+}
+
+.hradder-scrolled {
+    background-color: #fff;
+    transition: .3s;
+    .logo .cls-1 {
+        fill: #000;
+    }
+    li:not(:last-child) .menu__link {
+        color: #000 !important;
+    }
+    .c-nav {
+        @include mq-up(lg) {
+            padding-top: 0;
+        }
+    }
+    // Mobile header
+    //    .menu__tag {
+    //        color: #000 !important;
+    //    }
+    //    .c-nav__toggle,
+    //    .c-nav__toggle::before,
+    //    .c-nav__toggle::after {
+    //        background-color: #000 !important;
+    //    }
+}
+
+
+/*****-------------------------------
+    menu-bar01 is before
+    menu-bar02 is .c-nav__toggle
+    menu-bar03 is after
+-------------------------------*****/
+
+.open-anime.c-nav__toggle::before {
+    animation: menu-bar01 .75s forwards;
+}
+
+.open-anime.c-nav__toggle {
+    transition: all .25s .25s;
+    background-color: #fff;
+}
+
+.open-anime.c-nav__toggle::after {
+    animation: menu-bar02 .75s forwards;
+}
+
+.close-anime.c-nav__toggle::before {
+    animation: active-menu-bar01 .75s forwards;
+    background-color: #000;
+}
+
+.close-anime.c-nav__toggle {
+    background-color: transparent;
+}
+
+.close-anime.c-nav__toggle::after {
+    opacity: 1;
+    animation: active-menu-bar03 .75s forwards;
+    background-color: #000;
+}
+
+
+/*****-------------------------------
+    Animations (keyframes)
+-------------------------------*****/
+
+
+/* --- loding --- */
+
+@keyframes text-in {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(120px);
+    }
+    50% {
+        transform: translateX(450px);
+    }
+    100% {
+        transform: translateX(450px);
+    }
+}
+
+@keyframes text-in-lg {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(210px);
+    }
+    50% {
+        transform: translateX(800px);
+    }
+    100% {
+        transform: translateX(800px);
+    }
+}
+
+@keyframes text-down {
+    67% {
+        top: 0;
+        opacity: .8;
+    }
+    100% {
+        top: 50px;
+        opacity: 0;
+    }
+}
+
+
+/* --- nav open --- */
+
+@keyframes menu-bar01 {
+    0% {
+        transform: translateY(7px) rotate(45deg);
+    }
+    50% {
+        transform: translateY(7px) rotate(0);
+    }
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+}
+
+@keyframes menu-bar02 {
+    0% {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+    50% {
+        transform: translateY(-7px) rotate(0);
+    }
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+}
+
+
+/* --- nav close --- */
+
+@keyframes active-menu-bar01 {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+    50% {
+        transform: translateY(7px) rotate(0);
+    }
+    100% {
+        transform: translateY(7px) rotate(45deg);
+    }
+}
+
+@keyframes active-menu-bar03 {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+    50% {
+        transform: translateY(-7px) rotate(0);
+    }
+    100% {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+}
+
+
+/* --- show text --- */
+
+@keyframes text {
+    0% {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    80% {
+        transform: translateY(25px);
+        opacity: 0;
+        text-shadow: 1px 1px 1px #fff;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+        text-shadow: none;
+    }
+}
+
+
+/* --- scroll down --- */
+
+@keyframes arrow-down {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+}

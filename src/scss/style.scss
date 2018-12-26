@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/*****-------------------------------
+
+    Foundation setting
+
+-------------------------------*****/
+
+@import "foundation/reset";
+@import "foundation/form-reset";
+@import "foundation/mixin/color";
+@import "foundation/mixin/fonts";
+@import "foundation/mixin/mediaquery";
+@import "foundation/mixin/mixins_extends";
+@import "foundation/base";
+
+/*****-------------------------------
+
+    Utility setting
+
+-------------------------------*****/
+
+@import "object/utility/animation";
+@import "object/utility/utility";
+
+/*****-------------------------------
+
+    Layout setting
+
+-------------------------------*****/
+
+@import "layout/grid-bs";
+@import "layout/default";
+
+/*****-------------------------------
+
+    Component setting
+
+-------------------------------*****/
+
+@import "object/component/nav";
+@import "object/component/text";
+@import "object/component/card";
+
+/*****-------------------------------
+
+    Project common setting
+
+-------------------------------*****/
+

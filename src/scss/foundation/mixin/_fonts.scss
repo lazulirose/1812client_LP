@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600');
+// font-size
+@mixin font-size($size: 24,
+$base: 16) {
+    font-size: $size + px;
+    font-size: ($size / $base) * 1rem;
+}
+
+// font-face
+@mixin font-face($name,
+$path,
+$weight: null,
+$style: null,
+$exts: otf ttf) {
+    $src: null;
+    $formats: ( otf: "opentype", ttf: "truetype");
+    @each $ext in $exts {
+        $format: map-get($formats, $ext);
+        $src: append($src, url(quote($path)) format(quote($format)), comma);
+    }
+    @font-face {
+        font-family: quote($name);
+        font-style: $style;
+        font-weight: $weight;
+        src: $src;
+    }
+}
+
+// font-family
+@mixin font-family($type,
+$important: false) {
+    @if $important=='important' or $important==true {
+        $important: ' !important';
+    }
+    @else {
+        $important: '';
+    }
+    @if $type==sans-serif {
+        font-family: sans-serif#{$important};
+    }
+    @else if $type==serif {
+        font-family: serif#{$important};
+    }
+    @else if $type==meiryo {
+        font-family: Meiryo,
+        'MS PGothic',
+        sans-serif#{$important};
+    }
+    @else if $type==yugothic {
+        font-family: '游ゴシック体',
+        'Yu Gothic',
+        YuGothic,
+        sans-serif#{$important};
+    }
+    @else if $type==monospace {
+        font-family: monospace#{$important};
+    }
+    @else if $type==hiraginoG {
+        font-family: "ヒラギノ角ゴ Pro",
+        "Hiragino Kaku Gothic Pro",
+        "メイリオ",
+        "Meiryo",
+        sans-serif#{$important};
+    }
+    @else if $type==hiraginoM {
+        font-family: "ヒラギノ明朝 ProN W3",
+        "Hiragino Mincho ProN",
+        "游明朝",
+        YuMincho,
+        "HG明朝E",
+        "ＭＳ Ｐ明朝",
+        "ＭＳ 明朝",
+        serif#{$important};
+    }
+    @else if $type==verdana {
+        font-family: Verdana,
+        Arial,
+        Helvetica,
+        sans-serif#{$important};
+    }
+    @else if $type==tahoma {
+        font-family: Tahoma,
+        Arial,
+        Helvetica,
+        sans-serif#{$important};
+    }
+    @else if $type==times {
+        font-family: "Times New Roman",
+        "ヒラギノ明朝 ProN W3",
+        "Hiragino Mincho ProN",
+        serif#{$important};
+    }
+    @else if $type==en {
+        font-family: 'Montserrat',
+        sans-serif#{$important};
+    }
+}
+
+// text-shadow
+@mixin text-shadow($opacity: .16) {
+    text-shadow: 2px 1px 3px rgba(#000, $opacity);
+}

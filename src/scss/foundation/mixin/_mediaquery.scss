@@ -1,0 +1,37 @@
+//*  common view point var lg 992px -> lg 1090px
+//------------------------*/
+// min-width
+$breakpoint-up: ( 'sm': 'screen and (min-width: 481px)', 'md': 'screen and (min-width: 768px)', 'lg': 'screen and (min-width: 1090px)', 'xl': 'screen and (min-width: 1301px)') !default;
+// Definition of @mixin [@include mq-up()]
+@mixin mq-up($breakpoint: md) {
+    @media #{map-get($breakpoint-up, $breakpoint)} {
+        @content;
+    }
+}
+
+// max-width
+$breakpoint-down: ( 'sm': 'screen and (max-width: 480px)', 'md': 'screen and (max-width: 767px)', 'lg': 'screen and (max-width: 1090px)', 'xl': 'screen and (max-width: 1300px)', ) !default;
+// Definition of @mixin [@include mq-down()]
+@mixin mq-down($breakpoint: md) {
+    @media #{map-get($breakpoint-down, $breakpoint)} {
+        @content;
+    }
+}
+
+
+/*****-------------------------------
+    Mediaquery initial setting
+-------------------------------*****/
+
+.pc-only {
+    display: none;
+    @include mq-up(md) {
+        display: block;
+    }
+}
+
+.sp-only {
+    @include mq-up(md) {
+        display: none;
+    }
+}

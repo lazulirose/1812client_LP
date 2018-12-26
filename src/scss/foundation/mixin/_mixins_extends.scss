@@ -1,0 +1,122 @@
+//*  mixin
+//------------------------*/
+@mixin fts($fts, $lin: 24) {
+    $rem: $fts / 10;
+    $linS: $lin / $fts;
+    font-size: #{$fts}px;
+    font-size: #{$rem}rem;
+    line-height: $linS;
+}
+
+@mixin linkcolor($color) {
+    color: $color;
+    &:hover,
+    &:active,
+    &:focus {
+        opacity: .4;
+    }
+}
+
+@mixin abs-position($top: auto, $right: auto, $bottom: auto, $left: auto) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin arrow($direction: right, $size: 10, $color: $black) {
+    $set: left;
+    @if $direction==left {
+        $set: right;
+    }
+    @else if $direction==top {
+        $set: bottom;
+    }
+    @else if $direction==bottom {
+        $set: top;
+    }
+    @else {
+        $set: left;
+    }
+    $size: round($size / 2);
+    width: 0;
+    height: 0;
+    border: $size+px solid transparent;
+    border-#{$set}-color: $color;
+}
+
+@mixin arrowlink($top, $size: 10, $color: $black) {
+    position: relative;
+    padding-left: 10px;
+    &:before {
+        display: block;
+        content: "";
+        position: absolute;
+        top: $top + px;
+        left: 1px;
+        @include arrow(right, $size, $color);
+    }
+}
+
+@mixin p-bg($url) {
+    display: block;
+    position: absolute;
+    top: -4px;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 310px;
+    background-image: url($url);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    filter: blur(4px) brightness(.8);
+    content: "";
+    @include mq-up(lg) {
+        height: 410px;
+    }
+}
+
+//*  extend
+//------------------------*/
+.vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+//*  placeholder selector
+//------------------------*/
+%clearfix {
+    zoom: 1;
+    &:after {
+        content: ".";
+        display: block;
+        clear: both;
+        height: 0;
+        visibility: hidden;
+    }
+}
+
+%ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+}
+
+%hidetext {
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+
+//* variable
+//------------------------*/
+// # img-Path
+$path-pj: "**";
+$path-img: "#{$path-pj}/img";
+$path-sprite: "#{$path-img}/sprite.png";
