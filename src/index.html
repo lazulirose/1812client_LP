@@ -35,6 +35,7 @@
 
         ga('create', 'UA-XXXXXXXX-Y', 'example.com');
         ga('send', 'pageview');
+
     </script>
 </head>
 
@@ -42,28 +43,34 @@
     <div id="index">
         <header class="l-header" id="is-scrolled">
             <nav class="c-nav">
-                <h1 class="c-nav__logo">
+                <h1 class="c-nav_logo">
                     <a href="#index">
                         <img src="./images/logo.png" alt="FOUR WORD English Studio logo" class="logo">
                     </a>
                 </h1>
-                <div class="c-nav__toggle" id="is-menuclose">
-                    <p class="menu__tag">MENU</p><button class="menu__button" onclick="navigationTrigger()"></button></div>
+                <div class="c-nav_toggle" id="is-menuclose">
+                    <p class="menu_tag">MENU</p><button class="menu_button" onclick="navigationTrigger()"></button></div>
                 <div class="c-menu" id="is-open">
-                    <ul class="c-menu__body">
+                    <ul class="c-menu_body">
                         <li>
-                            <a class="menu__link" onclick="jumpToLinks()" href="#about">ABOUT</a>
+                            <a class="menu_link" onclick="jumpToLinks()" href="#problem">PROBLEM</a>
                         </li>
                         <li>
-                            <a class="menu__link" onclick="jumpToLinks()" href="#contents">POINT</a>
+                            <a class="menu_link" onclick="jumpToLinks()" href="#solution">SOLUTION</a>
                         </li>
                         <li>
-                            <a class="menu__link" onclick="jumpToLinks()" href="#schedule">INSTRUCTOR</a>
+                            <a class="menu_link" onclick="jumpToLinks()" href="#about">ABOUT</a>
                         </li>
                         <li>
-                            <a class="menu__link" onclick="jumpToLinks()" href="#schedule">PRICE</a>
+                            <a class="menu_link" onclick="jumpToLinks()" href="#contents">POINT</a>
                         </li>
-                        <li><a class="menu__entry" onclick="jumpToLinks()" href="#entry">ENTRY</a></li>
+                        <li>
+                            <a class="menu_link" onclick="jumpToLinks()" href="#schedule">INSTRUCTOR</a>
+                        </li>
+                        <li>
+                            <a class="menu_link" onclick="jumpToLinks()" href="#schedule">PRICE</a>
+                        </li>
+                        <li><a class="menu_entry" onclick="jumpToLinks()" href="#form">ENTRY</a></li>
                     </ul>
                 </div>
             </nav>
@@ -79,15 +86,15 @@
             </div>
             <div class="l-keyviasual">
                 <div class="p-keyviasual">
-                    <video class="p-keyviasual__bg" id="js-autoplay" poster="./images/firstview-bg.gif" preload="none" autoplay loop muted playsinline>
+                    <video class="p-keyviasual_bg" id="js-autoplay" poster="./images/firstview-bg.gif" preload="none" autoplay loop muted playsinline>
                     <source src="./images/firstview-bg.mp4">
                 </video>
                 </div>
-                <div class="p-keyviasual__tagline">
+                <div class="p-keyviasual_tagline">
                     <img src="./images/tagline.png" alt="">
                 </div>
-                <p class="p-keyviasual__text">TAKE THE<br>FIRST STEP</p>
-                <p class="p-keyviasual__text">最小の努力で最大の効果が出る本当の英語学習をフィリピンで</p>
+                <p class="p-keyviasual_text">TAKE THE<br>FIRST STEP</p>
+                <p class="p-keyviasual_text">最小の努力で最大の効果が出る本当の英語学習をフィリピンで</p>
             </div>
             <div class="introduction">
                 <h2 class="">フィリピン留学には<br>隠された問題があることを<br>あなたはご存知ですか？</h2>
@@ -109,96 +116,93 @@
                     <div class="c-card">
                         <h2 class="c-card_title">効果の出ない授業</h2>
                         <div class="c-card_body">
-                            <h2 class="c-card_title">「1日20時間の授業」では<br>英語力は上達しない？</h2>
-                            <p class="c-card_text">人間には集中力の限界があります。<br>集中できない状態で行った3時間の勉強より、集中した状態での１時間の勉強が英語力の向上につながります。<br><br>英語力を伸ばすには授業の後も復習が必要ですが、現在のフィリピン留学は授業時間が長すぎる傾向にあります。</p>
+                            <h2 class="c-card_body_title">「1日20時間の授業」では<br>英語力は上達しない？</h2>
+                            <p class="c-card_body_text">人間には集中力の限界があります。<br>集中できない状態で行った3時間の勉強より、集中した状態での１時間の勉強が英語力の向上につながります。<br><br>英語力を伸ばすには授業の後も復習が必要ですが、現在のフィリピン留学は授業時間が長すぎる傾向にあります。</p>
                         </div>
                     </div>
                     <div class="c-card">
                         <h2 class="c-card_title">モチベーションの低下</h2>
                         <div class="c-card_body">
-                            <h2 class="c-card_title">集中力が切れた状態の授業は<br>モチベーション低下に繋がる？</h2>
-                            <p class="c-card_text">集中力できない状態では授業の内容が頭に入らないだけではなく、脳を疲労させます。深夜にまで及ぶ長時間の勉強も同様です。私たちが思いがちな「長時間の勉強で英語力が伸びる」という思い込みは結果的に勉強効率を下げます。<br><br>集中力できない状態で深夜まで勉強したとしても英語力は伸びません。努力量に比例して結果を感じられないことがモチベーション低下に繋がり英語を嫌いになってしまうこともあります。</p>
+                            <h2 class="c-card_body_title">集中力が切れた状態の授業は<br>モチベーション低下に繋がる？</h2>
+                            <p class="c-card_body_text">集中力できない状態では授業の内容が頭に入らないだけではなく、脳を疲労させます。深夜にまで及ぶ長時間の勉強も同様です。私たちが思いがちな「長時間の勉強で英語力が伸びる」という思い込みは結果的に勉強効率を下げます。<br><br>集中力できない状態で深夜まで勉強したとしても英語力は伸びません。努力量に比例して結果を感じられないことがモチベーション低下に繋がり英語を嫌いになってしまうこともあります。</p>
                         </div>
                     </div>
                     <div class="c-card">
                         <h2 class="c-card_title">授業と講師の質</h2>
                         <div class="c-card_body">
-                            <h2 class="c-card_title">英語を話せるのと<br>教えるスキルは別のモノ？</h2>
-                            <p class="c-card_text">春休みと夏休みシーズンは学生の数が一気に増えます。この時期は多くの学校が講師を必要としており、学校間で講師の取合いが起こっています。<br><br>講師の数が足りないために、スキルの足りない数合わせの講師が採用されることも珍しくありません。<br><br>それによって、今まで「フィリピン留学は講師の質の差が激しい」と言われてきました。英語を教えるためには英語が話せるだけではなく教えるためのスキルを必要としています。</p>
+                            <h2 class="c-card_body_title">英語を話せるのと<br>教えるスキルは別のモノ？</h2>
+                            <p class="c-card_body_text">春休みと夏休みシーズンは学生の数が一気に増えます。この時期は多くの学校が講師を必要としており、学校間で講師の取合いが起こっています。<br><br>講師の数が足りないために、スキルの足りない数合わせの講師が採用されることも珍しくありません。<br><br>それによって、今まで「フィリピン留学は講師の質の差が激しい」と言われてきました。英語を教えるためには英語が話せるだけではなく教えるためのスキルを必要としています。</p>
                         </div>
                     </div>
                     <div class="c-card">
                         <h2 class="c-card_title">頼りになる人がいない</h2>
                         <div class="c-card_body">
-                            <h2 class="c-card_title">日本人の英語初心者にとって<br>効果的な学習方法がある？</h2>
-                            <p class="c-card_text">日本人スタッフの経験を元にしたアドバイスとサポートでは、ひとりひとりに適した学習サポートに対応することができません。<br><br>授業内容を自分で決められる学校もありますが、実際には初級者が自分自身に見合った授業内容を組むことは非常に難しく、教えているフィリピン人とは効率のいい勉強方法が異なります。<br><br>効果の出にくいカリキュラムのまま授業が進んでしまうこともよくある問題で、フィリピン留学は本当の意味で学習面のサポートまで行き届いている学校がほぼありませんでした。
+                            <h2 class="c-card_body_title">日本人の英語初心者にとって<br>効果的な学習方法がある？</h2>
+                            <p class="c-card_body_text">日本人スタッフの経験を元にしたアドバイスとサポートでは、ひとりひとりに適した学習サポートに対応することができません。<br><br>授業内容を自分で決められる学校もありますが、実際には初級者が自分自身に見合った授業内容を組むことは非常に難しく、教えているフィリピン人とは効率のいい勉強方法が異なります。<br><br>効果の出にくいカリキュラムのまま授業が進んでしまうこともよくある問題で、フィリピン留学は本当の意味で学習面のサポートまで行き届いている学校がほぼありませんでした。
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- /.l-problem -->
-            <div class="l-about" id="about">
+            <div class="l-solution" id="solution">
                 <div class="c-sectiontitel">
                     <h2 class="is-show">OUR SOLUTIONS</h2>
                     <h3 class="is-show">FOUR WORD English Studioの<br class="sp-only">解決方法</h3>
                 </div>
-                <div class="p-about_container is-show">
-                    <div class="p-about_content">
+                <div class="p-solution_container is-show">
+                    <div class="p-solution_content">
                         <img src="" alt="" class="p-about_content_image">
-                        <p class="p-about_content_text">金曜日は振返りや授業外学習<br>スピーチ・課題発表・テスト</p>
-                        <p class="p-about_content_tag">
+                        <p class="p-solution_content_text">金曜日は振返りや授業外学習<br>スピーチ・課題発表・テスト</p>
+                        <p class="p-solution_content_tag">
                             <span># コースを迷わない</span><span># マンツー4時間</span><span># グループ2時間</span><span># 自習不要</span><span># レベルに見合った事業内容を提案</span>
                         </p>
-                        <div class="p-about_content_body">
-                            <h2 class="p-about_content_body_title"> 短時間授業でしっかり集中</h2>
-                            <p class="p-about_content_body_text">英語学校では授業数に応じて値段が変わるのが一般的ですが、実際は授業数が英語力に直結するわけではありません。<br><br>FOUR WORD English Studioでは、時間の使い方を考え抜いたカリキュラムによって短時間で効果的な勉強を可能にしました。<br><br>授業は基礎からしっかり行い、決して楽ではありませんが、あなたに合った効果的な授業数を提供するためコース選びに迷う必要がありません。</p>
+                        <div class="p-solution_content_body">
+                            <h2 class="p-solution_content_body_title"> 短時間授業でしっかり集中</h2>
+                            <p class="p-asolution_content_body_text">英語学校では授業数に応じて値段が変わるのが一般的ですが、実際は授業数が英語力に直結するわけではありません。<br><br>FOUR WORD English Studioでは、時間の使い方を考え抜いたカリキュラムによって短時間で効果的な勉強を可能にしました。<br><br>授業は基礎からしっかり行い、決して楽ではありませんが、あなたに合った効果的な授業数を提供するためコース選びに迷う必要がありません。</p>
                         </div>
                     </div>
-                    <div class="p-about_content">
-                        <img src="" alt="" class="p-about_content_image">
-                        <p class="p-about_content_text">第二言語習得論＋６年間の経験<br>効率的なカリキュラム
+                    <div class="p-solution_content">
+                        <img src="" alt="" class="p-solution_content_image">
+                        <p class="p-solution_content_text">第二言語習得論＋６年間の経験<br>効率的なカリキュラム
                         </p>
-                        <p class="p-about_content_tag">
+                        <p class="p-solution_content_tag">
                             <span># 次週に備えたリフレッシュ</span><span># 門限なし</span><span># 欧米留学スタイル</span><span># 週末のアクティビティやパーティ</span><span># 実生活を通して海外ライフを満喫</span>
                         </p>
-                        <div class="p-about_content_body">
-                            <h2 class="p-about_content_body_title">遊ぶように英語を学ぶ</h2>
-                            <p class="p-about_content_body_text">英語の勉強は継続が必要です。 楽しめなければ続けることが難しくなります。受験のように机へ向かってばかりでは長続きしなしません。英語の勉強が楽しいと思えるようにする仕組みが必要です。
+                        <div class="p-solution_content_body">
+                            <h2 class="p-solution_content_body_title">遊ぶように英語を学ぶ</h2>
+                            <p class="p-solution_content_body_text">英語の勉強は継続が必要です。 楽しめなければ続けることが難しくなります。受験のように机へ向かってばかりでは長続きしなしません。英語の勉強が楽しいと思えるようにする仕組みが必要です。
                                 <br><br> FOUR WORD English Studioでは、勉強を「やらなければ」から「したい」へシフトにする仕組みをご用意しています。<br><br> 従来の学校のような空間からおしゃれなカフェのような空間で楽みながら授業が受けられるよう、海外をもっと楽しみながらの勉強ができるようになります。
-
                             </p>
                         </div>
                     </div>
-                    <div class="p-about_content">
-                        <img src="" alt="" class="p-about_content_image">
-                        <p class="p-about_content_text">一貫性のある<br>クオリティコントールを実現</p>
-                        <p class="p-about_content_tag"><span># 日本人に向け授業</span><span># 品質保持</span><span># 高品質</span><span># 第二言語習得論のプロフェショナル監修カリキュラム</span></p>
-                        <div class="p-about_content_body">
-                            <h2 class="p-about_content_body_title">他にはないほどに、<br class="sp-only">徹底した質の高さ</h2>
-                            <p class="p-about_content_body_text">講師のトレーニングは週一回程度が主流です。しかし、私たちは毎日2時間のトレーニングを第二言語習得論のプロフェッショナル監修の日本人特化型のカリキュラムに沿って行っています。<br><br> FOUR WORD English Studioでは、数合わせの講師は雇用しません。トレーニングを積んだ精鋭講師陣だけが授業を担当しています。<br><br> 提供する授業の質にこだわり、講師と授業の品質保持に力を入れた徹底されたクオリティの授業が自慢です。
-
+                    <div class="p-solution_content">
+                        <img src="" alt="" class="p-solution_content_image">
+                        <p class="p-solution_content_text">一貫性のある<br>クオリティコントールを実現</p>
+                        <p class="p-solution_content_tag"><span># 日本人に向け授業</span><span># 品質保持</span><span># 高品質</span><span># 第二言語習得論のプロフェショナル監修カリキュラム</span></p>
+                        <div class="p-solution_content_body">
+                            <h2 class="p-solution_content_body_title">他にはないほどに、<br class="sp-only">徹底した質の高さ</h2>
+                            <p class="p-solution_content_body_text">講師のトレーニングは週一回程度が主流です。しかし、私たちは毎日2時間のトレーニングを第二言語習得論のプロフェッショナル監修の日本人特化型のカリキュラムに沿って行っています。<br><br> FOUR WORD English Studioでは、数合わせの講師は雇用しません。トレーニングを積んだ精鋭講師陣だけが授業を担当しています。<br><br> 提供する授業の質にこだわり、講師と授業の品質保持に力を入れた徹底されたクオリティの授業が自慢です。
                             </p>
                         </div>
                     </div>
-                    <div class="p-about_content">
-                        <img src="" alt="" class="p-about_content_image">
-                        <p class="p-about_content_text">プロフェッショナルからの<br>個人に合った学習アドバイス</p>
-                        <p class="p-about_content_tag"><span># 勉強方法に困らない</span><span># 相談相手の居る学校</span><span># 第二言語習得論</span><span># 科学的に証明された勉強法</span><span># 日本人英語教師</span></p>
-                        <div class="p-about_content_body">
-                            <h2 class="p-about_content_body_title">プロフェッショナルが学習サポートを担当</h2>
-                            <p class="p-about_content_body_text">FOUR WORD English Studioでは、英語講師の経験を持つ第二言語習得論学習者が学習サポートも行っています。<br><br> 彼らは英語力が高いだけではありません。プロの翻訳家としも活躍し、VIPへの直接指導も行ってきた経験豊富なプロフェッショナルたちが直接あなたの学習相談を行い、学習のサポートを担当しています。
-
+                    <div class="p-solution_content">
+                        <img src="" alt="" class="p-solution_content_image">
+                        <p class="p-solution_content_text">プロフェッショナルからの<br>個人に合った学習アドバイス</p>
+                        <p class="p-solution_content_tag"><span># 勉強方法に困らない</span><span># 相談相手の居る学校</span><span># 第二言語習得論</span><span># 科学的に証明された勉強法</span><span># 日本人英語教師</span></p>
+                        <div class="p-solution_content_body">
+                            <h2 class="p-solution_content_body_title">プロフェッショナルが学習サポートを担当</h2>
+                            <p class="p-solution_content_body_text">FOUR WORD English Studioでは、英語講師の経験を持つ第二言語習得論学習者が学習サポートも行っています。<br><br> 彼らは英語力が高いだけではありません。プロの翻訳家としも活躍し、VIPへの直接指導も行ってきた経験豊富なプロフェッショナルたちが直接あなたの学習相談を行い、学習のサポートを担当しています。
                                 <br><br> 専門の知識を持たない場合、手探りに勉強方法を試して基調な留学滞在中の時間使ってしまうこともあります。しかし、プロフェッショナルがサポートすることによって１人１人に合ったベストな学習方法を学習を始める最初の段階から提案することができます。
                             </p>
                         </div>
                     </div>
                 </div>
-                <p class="p-about_conclusion">
+                <p class="p-solution_conclusion">
                     本当の意味で<br class="pc-only">効率的な英語学習を<br>最初から提案できるのは<br> 私たちだけの強みです。
                 </p>
             </div>
-            <!-- /.l-about -->
+            <!-- /.l-solution -->
             <div class="l-about" id="about">
                 <div class="c-sectiontitel">
                     <h2 class="is-show">ABOUT US</h2>
@@ -222,11 +226,8 @@
                     <h2 class="p-about_environment_highlight-right">「学校」らしくない空間</h2>
                     <p class="p-about_environment_text">遊ぶように学んでほしいから施設にもこだわりました。<br> 従来の「学校らしさ」から外れて、まるで街のカフェで勉強するように開放的でおしゃれな空間の中で授業を受けます。
                         <br><br> 少しでも英語学習のストレスを減らしたくて、いるだけで思わず楽しくなるような空間をご用意してお待ちしています。
-
                         <br><br> キャンパスの屋上にあるカフエでは、綺麗な景色を楽しみながら一息つくことができます。
-
                         <br><br> 学生は勉強の休憩や友達と話すときにも、このカフェを利用することができます。
-
                     </p>
                 </div>
             </div>
@@ -235,8 +236,7 @@
                 <h2 class="p-sales_title">学費全額返金制度</h2>
                 <p class="p-sales_title">
                     12週以上お申し込みの方が対象です。最初の４週間以内に結果にご満足いかなければ料金を全額返金します。
-                    <span>※一部条件有（詳しくはパンフレットをご参照ください）
-</span>
+                    <span>※一部条件有（詳しくはパンフレットをご参照ください）</span>
                 </p>
                 <button class="p-sales_button button">パンフレットのダウンロードはこちら</button>
             </div>
@@ -255,11 +255,8 @@
                         <h2 class="p-instructor_yumi">Yumi</h2>
                         <h3 class="p-instructor_position">Four Word English Studio
                             <span>総責任者</span></h3>
-                        <p class="p-about_instructor_description">26歳までは英語と無縁の生活を送るも一念発起し、超ビギナー状態から3ヶ月のセブ島留学を経験し英語教育に強い興味をもつ。<br> 28歳でセブの語学学校TARGET Global English Academyの立ち上げメンバーとして参画する。<br><br> 29歳で始めてTOEIC900点を初クリア、その後965点を取得。
-
-                            <br> その後、第二言語習得理論、音声学、英語教授法を早稲田大学で学び、語学系専門学校やエグゼクティブ専用TOEICスクールで英語講師として活躍。
+                        <p class="p-about_instructor_description">26歳までは英語と無縁の生活を送るも一念発起し、超ビギナー状態から3ヶ月のセブ島留学を経験し英語教育に強い興味をもつ。<br> 28歳でセブの語学学校TARGET Global English Academyの立ち上げメンバーとして参画する。<br><br> 29歳で始めてTOEIC900点を初クリア、その後965点を取得。<br> その後、第二言語習得理論、音声学、英語教授法を早稲田大学で学び、語学系専門学校やエグゼクティブ専用TOEICスクールで英語講師として活躍。
                             <br><br> これまでに、初級者の学生からGoogleやAccentureなど超グローバル企業の社員まで、幅広い生徒を担当の経験をもち日本人の英語の弱点を知り尽くし、日本人にとって効果的な英語学習法を提案し続けている。
-
                         </p>
                     </div>
                 </div>
@@ -269,11 +266,8 @@
                         <h2 class="p-instructor_scott">Scott</h2>
                         <h3 class="p-instructor_position">Four Word English Studio<span>カリキュラムデベロッパー</span></h3>
                         <p class="p-about_instructor_description">中学時代にイギリス渡り、高校時代にアメリカに移住その後アメリカの大学院に進学した後日本に帰国し早稲田大学大学院を卒業。<br><br> 英検1級、TOEIC975点という高い英語力を武器に英語講師として活躍。その後「アジアで英語が通じる国」フィリピンに興味をもちセブに移住。
-
                             <br><br> 語学学校のカリキュラムデベロッパーとして活躍後、日系企業の翻訳事業部で契約書や定款などを高度な翻訳業務に従事するかたわら英文添削業務も手掛ける。
-
                             <br><br> 英語教育に強い使命感をもち、大志を持った学生の未来のために役に立てることを誇りとしている。
-
                         </p>
                     </div>
                 </div>
@@ -299,9 +293,9 @@
                 <button class="p-price_button button">パンフレットのダウンロードはこちら</button>
             </div>
             <!-- /.l-price -->
-            <div class="l-form" id="entry">
+            <div class="l-form" id="form">
                 <h2 class="p-from_title is-show">
-                   英語学習の「最初のステップ」となる学校
+                    英語学習の「最初のステップ」となる学校
                     <strong>FOUR WORD English Studio</strong>
                     <span>お問い合わせ、お申込みはこちらから</span>
                 </h2>
@@ -331,7 +325,7 @@
                     </form>
                 </div>
             </div>
-            <!-- /.l-entry -->
+            <!-- /.l-form -->
             <fotter class="l-fotter">
                 <ul class="p-fotter_sns">
                     <li class="p-fotter_sns_icon">
