@@ -192,7 +192,6 @@ header {
     strong {
         font-size: 32px;
     }
-
     &::after {
         content: "";
         display: block;
@@ -207,22 +206,23 @@ header {
 
 .p-introduction-second {
     position: relative;
+    z-index: 1;
     padding-bottom: 80px;
     line-height: 1.68;
     letter-spacing: 1.6px;
-        &::before {
+    &::before {
         content: "";
         display: inline-block;
         position: absolute;
         top: -70px;
         left: 10px;
-        z-index: -1;
         width: 120px;
         height: 120px;
         transform: rotate(-15deg);
         background: url(./../../../images/philippines.png) no-repeat;
         background-size: contain;
         vertical-align: middle;
+        opacity: .45;
     }
 }
 
@@ -233,11 +233,31 @@ header {
 
 .l-problem {}
 
-.c-titel {}
+.c-titel {
+    width: 100%;
+    padding: 16px 10%;
+    background-color: $accent;
+    color: $main;
+    h2 {
+        margin-bottom: 4px;
+        line-height: 1.2;
+        letter-spacing: 2px;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 32px;
+    }
+    h3 {
+        line-height: 1.4;
+        letter-spacing: 2.8px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+}
 
 .is-show {}
 
 .p-problem {
+    width: 100%;
     background-color: rgba(#fff, .8);
 }
 
