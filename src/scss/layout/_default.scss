@@ -1,237 +1,252 @@
 /*============================
-#index
-============================*/
-#index{
-}
-
-/*============================
 #is-scrolled.l-header
 ============================*/
-#is-scrolled.l-header{
-}
-.c-nav{
-}
-.c-nav_logo{
-}
-.logo{
-}
+
+.l-header {}
+
+.c-nav {}
+
+.c-nav_logo {}
+
+.logo {}
+
 
 /*============================
 #is-menuclose.c-nav_toggle
 ============================*/
-#is-menuclose.c-nav_toggle{
-}
-.menu_tag{
-}
-.menu_button{
-}
+
+.c-nav_toggle {}
+
+.menu_tag {}
+
+.menu_button {}
+
 
 /*============================
 #is-open.c-menu
 ============================*/
-#is-open.c-menu{
-}
-.c-menu_body{
-}
-.menu_link{
-}
-.menu_entry{
-}
+
+.c-menu {}
+
+.c-menu_body {}
+
+.menu_link {}
+
+.menu_entry {}
+
 
 /*============================
 #loader.l-loading
 ============================*/
-#loader.l-loading{
-}
+
+.l-loading {}
+
 
 /*============================
 #loader-text.p-loading.tagline
 ============================*/
-#loader-text.p-loading.tagline{
-}
-.l-keyviasual{
-}
-.p-keyviasual{
-}
-.p-keyviasual_bg{
-}
-.p-tagline-en{
-}
-.p-tagline-jp{
-}
-.l-introduction{
-}
-.p-introduction-first{
-}
-.p-introduction-second{
-}
+
+.p-loading.tagline {}
+
+.l-keyviasual {}
+
+.p-keyviasual {}
+
+.p-keyviasual_bg {}
+
+.p-tagline-en {}
+
+.p-tagline-jp {}
+
+.l-introduction {}
+
+.p-introduction-first {}
+
+.p-introduction-second {}
+
 
 /*============================
 #problem.l-problem
 ============================*/
-#problem.l-problem{
+
+.l-problem {
+    background: $main url(./../../../images/bg-1.jpg) no-repeat center center;
+    background-size: cover;
 }
-.c-titel{
-}
-.is-show{
-}
-.p-problem.is-show{
-}
-.p-problem_cards.is-show{
-}
-.c-card{
-}
-.c-card_title{
-}
-.c-card_body{
-}
-.c-card_body_title{
-}
-.c-card_body_text{
-}
+
+.c-titel {}
+
+.is-show {}
+
+.p-problem.is-show {}
+
+.p-problem_cards.is-show {}
+
+.c-card {}
+
+.c-card_title {}
+
+.c-card_body {}
+
+.c-card_body_title {}
+
+.c-card_body_text {}
+
 
 /*============================
 #solution.l-solution
 ============================*/
-#solution.l-solution{
-}
-.p-solution_container.is-show{
-}
-.p-solution_content{
-}
-.p-about_content_image{
-}
-.p-solution_content_text{
-}
-.p-solution_content_tag{
-}
-.p-solution_content_body{
-}
-.p-solution_content_body_title{
-}
-.p-asolution_content_body_text{
-}
-.p-solution_content_image{
-}
-.p-solution_content_body_text{
-}
-.p-solution_conclusion{
-}
+
+.l-solution {
+    background: $main url(./../../../images/bg-2.jpg) no-repeat center center;
+    background-size: cover;
+
+.p-solution_container.is-show {}
+
+.p-solution_content {}
+
+.p-about_content_image {}
+
+.p-solution_content_text {}
+
+.p-solution_content_tag {}
+
+.p-solution_content_body {}
+
+.p-solution_content_body_title {}
+
+.p-asolution_content_body_text {}
+
+.p-solution_content_image {}
+
+.p-solution_content_body_text {}
+
+.p-solution_conclusion {}
+
 
 /*============================
 #about.l-about
 ============================*/
-#about.l-about{
+
+.l-about {}
+
+.p-about_container {}
+
+.p-about_container_texttag {}
+
+.p-about_container_image {}
+
+.p-about_description {}
+
+.p-about_description_highlight {}
+
+.p-about_description_text {}
+
+.p-about_environment {}
+
+.p-about_environment_highlight-left {}
+
+.p-about_environment_image-top {}
+
+.p-about_environment_image-right {}
+
+.p-about_environment_image-left {}
+
+.p-about_environment_highlight-right {}
+
+.p-about_environment_text {}
+
+.l-sales {
+    background: $main url(./../../../images/bg-3.jpg) no-repeat center center;
+    background-size: cover;
 }
-.p-about_container{
-}
-.p-about_container_texttag{
-}
-.p-about_container_image{
-}
-.p-about_description{
-}
-.p-about_description_highlight{
-}
-.p-about_description_text{
-}
-.p-about_environment{
-}
-.p-about_environment_highlight-left{
-}
-.p-about_environment_image-top{
-}
-.p-about_environment_image-right{
-}
-.p-about_environment_image-left{
-}
-.p-about_environment_highlight-right{
-}
-.p-about_environment_text{
-}
-.l-sales{
-}
-.p-sales_title{
-}
-.p-sales_button.button{
-}
+
+.p-sales_title {}
+
+.p-sales_button.button {}
+
 
 /*============================
 #instructor.l-instructor
 ============================*/
-#instructor.l-instructor{
-}
-.p-instructor_texttag{
-}
-.p-instructor-yumi{
-}
-.p-instructor_image-yumi{
-}
-.p-about_description-yumi{
-}
-.p-instructor_yumi{
-}
-.p-instructor_position{
-}
-.p-about_instructor_description{
-}
-.p-instructor-scott{
-}
-.p-instructor_image-scott{
-}
-.p-about_description-scott{
-}
-.p-instructor_scott{
-}
+
+.l-instructor {}
+
+.p-instructor_texttag {}
+
+.p-instructor-yumi {}
+
+.p-instructor_image-yumi {}
+
+.p-about_description-yumi {}
+
+.p-instructor_yumi {}
+
+.p-instructor_position {}
+
+.p-about_instructor_description {}
+
+.p-instructor-scott {}
+
+.p-instructor_image-scott {}
+
+.p-about_description-scott {}
+
+.p-instructor_scott {}
+
 
 /*============================
 #price.l-price
 ============================*/
-#price.l-price{
+
+.l-price {
+    background: $main url(./../../../images/bg-1.jpg) no-repeat center center;
+    background-size: cover;
 }
-.c-titel-price{
-}
-.p-price-table{
-}
-.p-price-table_image{
-}
-.p-price-campaign{
-}
-.p-price-campaign_image{
-}
-.p-price-refund{
-}
-.p-price-refund_image{
-}
-.p-price_button.button{
-}
+
+.c-titel-price {}
+
+.p-price-table {}
+
+.p-price-table_image {}
+
+.p-price-campaign {}
+
+.p-price-campaign_image {}
+
+.p-price-refund {}
+
+.p-price-refund_image {}
+
+.p-price_button.button {}
+
 
 /*============================
 #form.l-form
 ============================*/
-#form.l-form{
-}
-.p-from_title.is-show{
-}
-.p-form{
-}
-.element_wrap.is-show{
-}
-.c-bach-entry{
-}
-.l-fotter{
-}
-.p-fotter_sns{
-}
-.p-fotter_sns_icon{
-}
-.p-fotter_target{
-}
-.p-fotter_target_link{
-}
-.p-fotter_gototop{
-}
-.p-fotter_gototop_link{
-}
-.copyright{
-}
+
+.l-form {}
+
+.p-from_title.is-show {}
+
+.p-form {}
+
+.element_wrap.is-show {}
+
+.c-bach-entry {}
+
+.l-fotter {}
+
+.p-fotter_sns {}
+
+.p-fotter_sns_icon {}
+
+.p-fotter_target {}
+
+.p-fotter_target_link {}
+
+.p-fotter_gototop {}
+
+.p-fotter_gototop_link {}
+
+.copyright {}
