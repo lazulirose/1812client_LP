@@ -39,7 +39,13 @@
 #loader.l-loading
 ============================*/
 
-.l-loading {}
+.l-loading {
+    display: none;
+}
+
+header {
+    display: none;
+}
 
 
 /*============================
@@ -48,15 +54,128 @@
 
 .p-loading.tagline {}
 
-.l-keyviasual {}
+.l-keyviasual {
+    position: relative;
 
-.p-keyviasual {}
+    margin: auto;
+    @include mq-up(md) {
+        top: 56px;
+        right: 10%;
+    }
+    @include mq-up(lg) {
+        left: 0;
+        right: 0;
+    }
+}
 
-.p-keyviasual_bg {}
+.p-keyviasual {
+    height: inherit;
+    max-width: 1280px;
+    max-height: 100vh;
+    text-align: center;
+    @include mq-up(md) {
+        text-align: left;
+    }
+}
 
-.p-tagline-en {}
+.p-keyviasual_image {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    @include mq-up(md) {
+        max-height: 100vh;
+    }
+}
 
-.p-tagline-jp {}
+.p-tagline-en {
+    position: absolute;
+    bottom: -80px;
+    z-index: 9999;
+    width: 100%;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 60px;
+    color: $main;
+    @include mq-down(xs) {
+        line-height: 1.8;
+        font-size: 50px;
+    }
+    @include mq-up(md) {
+        right: 0;
+        bottom: 8%;
+    }
+    @include mq-up(lg) {
+        line-height: 1.25;
+        font-size: 100px;
+    }
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        width: 100%;
+        height: 80px;
+        text-align: center;
+        @include mq-up(lg) {}
+    }
+    &::before {
+        top: 5px;
+        background: #fff linear-gradient(90deg, $main 0%, $main 4%, #fff 4%, #fff 100%);
+        @include mq-down(xs) {
+            top: 5px;
+        }
+        @include mq-up(lg) {
+            top: 24px;
+        }
+    }
+    &::after {
+        bottom: 5px;
+        background: #fff linear-gradient(-90deg, $accent 0%, $accent 4%, #fff 4%, #fff 100%);
+        @include mq-down(xs) {
+            bottom: 5px;
+        }
+        @include mq-up(lg) {
+            bottom: 24px;
+        }
+    }
+}
+
+.p-tagline-jp {
+    position: absolute;
+    bottom: -135px;
+    z-index: 9999;
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: $main;
+    @media screen and (max-width: 538px) {
+        bottom: -145px;
+    }
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -30px;
+        z-index: -1;
+        right: 0;
+        width: 100%;
+        height: 80px;
+        background: #fff linear-gradient(90deg, $primary 0%, $primary 4%, #fff 4%, #fff 100%);
+        text-align: center;
+        @media screen and (max-width: 538px) {
+            bottom: -20px;
+        }
+        @include mq-up(lg) {}
+    }
+}
 
 .l-introduction {}
 
@@ -100,6 +219,7 @@
 .l-solution {
     background: $main url(./../../../images/bg-2.jpg) no-repeat center center;
     background-size: cover;
+}
 
 .p-solution_container.is-show {}
 
