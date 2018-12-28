@@ -56,7 +56,6 @@ header {
 
 .l-keyviasual {
     position: relative;
-
     margin: auto;
     @include mq-up(md) {
         top: 56px;
@@ -177,27 +176,70 @@ header {
     }
 }
 
-.l-introduction {}
+.l-introduction {
+    padding: 230px 5% 0;
+    background-color: rgba(#fff, .8);
+}
 
-.p-introduction-first {}
+.p-introduction-first {
+    position: relative;
+    z-index: 9999;
+    margin-bottom: 40px;
+    letter-spacing: 2.5px;
+    font-weight: bold;
+    font-size: 24px;
+    color: $main;
+    strong {
+        font-size: 32px;
+    }
 
-.p-introduction-second {}
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 36px;
+        z-index: -1;
+        width: 315px;
+        height: 12px;
+        background-color: $sub-color;
+    }
+}
+
+.p-introduction-second {
+    position: relative;
+    padding-bottom: 80px;
+    line-height: 1.68;
+    letter-spacing: 1.6px;
+        &::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: -70px;
+        left: 10px;
+        z-index: -1;
+        width: 120px;
+        height: 120px;
+        transform: rotate(-15deg);
+        background: url(./../../../images/philippines.png) no-repeat;
+        background-size: contain;
+        vertical-align: middle;
+    }
+}
 
 
 /*============================
 #problem.l-problem
 ============================*/
 
-.l-problem {
-    background: $main url(./../../../images/bg-1.jpg) no-repeat center center;
-    background-size: cover;
-}
+.l-problem {}
 
 .c-titel {}
 
 .is-show {}
 
-.p-problem.is-show {}
+.p-problem {
+    background-color: rgba(#fff, .8);
+}
 
 .p-problem_cards.is-show {}
 
@@ -319,10 +361,7 @@ header {
 #price.l-price
 ============================*/
 
-.l-price {
-    background: $main url(./../../../images/bg-1.jpg) no-repeat center center;
-    background-size: cover;
-}
+.l-price {}
 
 .c-titel-price {}
 

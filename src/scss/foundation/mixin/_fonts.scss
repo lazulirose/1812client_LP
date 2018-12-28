@@ -51,6 +51,7 @@ $important: false) {
         "Yu Gothic",
         YuGothic,
         sans-serif#{$important};
+        // Add  minerva-modern : custom Four word
     }
     @else if $type==monospace {
         font-family: monospace#{$important};

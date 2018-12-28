@@ -18,6 +18,9 @@ body {
     font-size: 14px;
     -webkit-text-size-adjust: 100%;
     letter-spacing: 1.2px;
+    background: $main url(./../../../images/bg-1.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
     @include mq-up(lg) {
         font-size: 16px;
     }
@@ -43,4 +46,12 @@ input {
 label {
     display: block;
     cursor: pointer;
+}
+h1,h2,h3,h4,h5,h6,p,li,a,small{
+  -o-transform: rotate(0.028deg);
+   -ms-transform: rotate(0.028deg);
+   -moz-transform: rotate(0.028deg);
+   -webkit-transform: rotate(0.028deg);
+   transform: rotate(0.028deg);
+
 }
