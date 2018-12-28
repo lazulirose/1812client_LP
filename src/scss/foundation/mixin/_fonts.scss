@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:600');
+@import url("https://use.typekit.net/hiw7jwp.css");
 // font-size
 @mixin font-size($size: 24,
 $base: 16) {
@@ -31,7 +30,7 @@ $exts: otf ttf) {
 @mixin font-family($type,
 $important: false) {
     @if $important=='important' or $important==true {
-        $important: ' !important';
+        $important: '!important';
     }
     @else {
         $important: '';
@@ -44,12 +43,12 @@ $important: false) {
     }
     @else if $type==meiryo {
         font-family: Meiryo,
-        'MS PGothic',
+        "MS PGothic",
         sans-serif#{$important};
     }
     @else if $type==yugothic {
-        font-family: '游ゴシック体',
-        'Yu Gothic',
+        font-family: minerva-modern, "游ゴシック体",
+        "Yu Gothic",
         YuGothic,
         sans-serif#{$important};
     }
