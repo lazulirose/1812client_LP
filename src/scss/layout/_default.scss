@@ -183,7 +183,7 @@ header {
 
 .p-introduction-first {
     position: relative;
-    z-index: 9999;
+    z-index: auto;
     margin-bottom: 40px;
     letter-spacing: 2.5px;
     font-weight: bold;
@@ -206,14 +206,15 @@ header {
 
 .p-introduction-second {
     position: relative;
-    z-index: 1;
-    padding-bottom: 80px;
-    line-height: 1.68;
-    letter-spacing: 1.6px;
+    z-index: auto;
+    padding-bottom: 60px;
+    @include text;
+    @include text-shadow;
     &::before {
         content: "";
         display: inline-block;
         position: absolute;
+        z-index: -1;
         top: -70px;
         left: 10px;
         width: 120px;
@@ -234,6 +235,8 @@ header {
 .l-problem {}
 
 .c-titel {
+    position: relative;
+    z-index: 9999;
     width: 100%;
     padding: 16px 10%;
     background-color: $accent;
@@ -254,24 +257,127 @@ header {
     }
 }
 
-.is-show {}
-
 .p-problem {
+    position: relative;
     width: 100%;
+    padding: 40px 5% 60px;
     background-color: rgba(#fff, .8);
+    line-height: 4;
+    font-weight: bold;
+    text-align: center;
+    color: $main;
 }
 
-.p-problem_cards.is-show {}
+.p-problem_list {
+    position: relative;
+}
 
-.c-card {}
+.p-problem_list::before,
+.c-card::before {
+    position: absolute;
+    z-index: auto;
+    bottom: -90px;
+    display: block;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 60px;
+    color: $sub-color;
+}
 
-.c-card_title {}
+.p-problem_list:nth-child(odd)::before {
+    left: 0;
+    text-align: left;
+}
 
-.c-card_body {}
+.p-problem_list:nth-child(even)::before {
+    right: 0;
+    text-align: right;
+}
 
-.c-card_body_title {}
+.p-problem_list:nth-child(1)::before,
+.c-card:nth-child(1)::before {
+    content: "1";
+}
 
-.c-card_body_text {}
+.p-problem_list:nth-child(2)::before,
+.c-card:nth-child(2)::before {
+    content: "2";
+}
+
+.p-problem_list:nth-child(3)::before,
+.c-card:nth-child(3)::before {
+    content: "3";
+}
+
+.p-problem_list:nth-child(4)::before,
+.c-card:nth-child(4)::before {
+    content: "4";
+}
+
+.c-card::before {
+    position: absolute;
+    z-index: -1;
+    padding: -1px;
+    bottom: -160px;
+    display: block;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 240px;
+    color: $sub-color;
+}
+
+.c-card:nth-child(odd)::before {
+    left: -70px;
+    text-align: left;
+}
+
+.c-card:nth-child(even)::before {
+    right: -70px;
+    text-align: right;
+}
+
+.p-problem_cards {
+    position: relative;
+    top: -25px;
+    z-index: 9999;
+}
+
+.c-card {
+    position: relative;
+    z-index: 9999;
+    width: 80%;
+    margin: 0 auto 16px;
+}
+
+.c-card_title {
+    height: 50px;
+    background: $main;
+    line-height: 3;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+}
+
+.c-card_body {
+    margin: 0 2.5%;
+    padding: 7% 5%;
+    background-color: #fff;
+}
+
+.c-card_body_title {
+    margin-bottom: 24px;
+    line-height: 1.68;
+    letter-spacing: 1.4px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    color: $main;
+}
+
+.c-card_body_text {
+    @include text;
+}
 
 
 /*============================
