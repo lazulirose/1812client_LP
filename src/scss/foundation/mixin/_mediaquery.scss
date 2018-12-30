@@ -25,13 +25,13 @@ $breakpoint-down: ( 'xs': 'screen and (max-width: 360px)','sm': 'screen and (max
 
 .pc-only {
     display: none;
-    @include mq-up(md) {
+    @include mq-up(lg) {
         display: block;
     }
 }
 
 .sp-only {
-    @include mq-up(md) {
+    @include mq-up(lg) {
         display: none;
     }
 }
