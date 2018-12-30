@@ -184,7 +184,8 @@ header {
 .p-introduction-first {
     position: relative;
     z-index: auto;
-    margin-bottom: 40px;
+    max-width: 480px;
+    margin: 0 auto 40px;
     letter-spacing: 2.5px;
     font-weight: bold;
     font-size: 24px;
@@ -207,6 +208,8 @@ header {
 .p-introduction-second {
     position: relative;
     z-index: auto;
+    max-width: 480px;
+    margin: auto;
     padding-bottom: 60px;
     @include text;
     @include text-shadow;
@@ -270,6 +273,8 @@ header {
 
 .p-problem_list {
     position: relative;
+    max-width: 480px;
+    margin: auto;
 }
 
 .p-problem_list::before,
@@ -330,6 +335,8 @@ header {
     position: relative;
     top: -25px;
     z-index: 9999;
+    max-width: 480px;
+    margin: auto;
 }
 
 .c-card {
@@ -626,33 +633,258 @@ header {
 #about.l-about
 ============================*/
 
-.l-about {}
+.l-about {
+    position: relative;
+    z-index: auto;
+    background-color: #fff;
+}
 
-.p-about_container {}
+.p-about_container {
+    position: relative;
+    z-index: auto;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto 120px;
+}
 
-.p-about_container_texttag {}
+.p-about_container_texttag {
+    display: block;
+    position: absolute;
+    right: 0;
+    z-index: 9999;
+    width: 300px;
+    letter-spacing: 2px;
+    line-height: 2;
+    text-align: center;
+    font-weight: bold;
+    color: $main;
+    font-size: 24px;
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: -1;
+        width: 300px;
+        height: 40px;
+        background-color: rgba(#1BB3D0, .8);
+    }
+    &::before {
+        top: 3px;
+    }
+    &::after {
+        bottom: 3px;
+    }
+    @media screen and (min-width: 400px) {
+        top: 40px;
+    }
+}
 
-.p-about_container_image {}
+.p-about_container_image {
+    position: relative;
+    top: 62px;
+    left: -5px;
+    z-index: 1000;
+    width: 102%;
+    padding-bottom: 500px;
+    margin: auto;
+    @media screen and (min-width: 400px) {
+        top: 102px;
+    }
+}
 
-.p-about_description {}
+.p-about_description {
+    position: absolute;
+    top: 500px;
+    left: 0;
+    right: 0;
+    width: 90%;
+    max-width: 480px;
+    margin: auto;
+    @media screen and (min-width: 400px) {
+        top: 540px;
+    }
+    @media screen and (min-width: 440px) {
+        top: 580px;
+    }
+}
 
-.p-about_description_highlight {}
+.p-about_description_highlight {
+    position: absolute;
+    z-index: auto;
+    display: block;
+    font-weight: bold;
+    &:nth-child(1) {
+        top: -20px;
+        right: 16px;
+        width: 20px;
+        line-height: 1.6;
+        font-size: 24px;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 35px;
+            right: -8px;
+            z-index: -1;
+            width: 70%;
+            height: 93%;
+            margin: auto;
+            background-color: $accent;
+        }
+    }
+    &:nth-child(2) {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding-right: 15%;
+        @include text;
+        & em {
+            display: inline;
+            width: 100%;
+            background-image: linear-gradient(transparent 80%, $accent 80%);
+        }
+    }
+}
 
-.p-about_description_text {}
+.p-about_description_text {
+    position: absolute;
+    top: 160px;
+    padding-right: 15%;
+    @include text;
+}
 
-.p-about_environment {}
+.p-about_environment_image-australia {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 75%;
+    max-width: 480px;
+    margin: auto;
+}
 
-.p-about_environment_highlight-left {}
+.p-about_environment {
+    position: relative;
+    z-index: 9999;
+    max-width: 480px;
+    margin: auto;
+    padding-bottom: 700px;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0%;
+        right: 0;
+        z-index: 9999;
+        display: block;
+        width: 100px;
+        min-height: 100px;
+        background: url(./../../../images/flags.png) no-repeat;
+        background-size: contain;
+    }
+    @media screen and (min-width: 400px) {
+        padding-bottom: 650px;
+    }
+    @media screen and (min-width: 480px) {
+        padding-bottom: 590px;
+        &::before {
+            top: 10px;
+            right: -25px;
+            width: 160px;
+        }
+    }
+    @media screen and (min-width: 550px) {
+        padding-bottom: 550px;
+        top: -60px;
+    }
+}
 
-.p-about_environment_image-top {}
+.p-about_environment_highlight-top {
+    position: relative;
+    z-index: -1;
+    padding: 24px 10% 24px 0;
+    text-align: right;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 18px;
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        width: 190px;
+        height: 110px;
+        margin: auto;
+        background-color: $sub-color;
+    }
+}
 
-.p-about_environment_image-right {}
+.p-about_environment_image-top {
+    position: relative;
+    z-index: -1;
+    width: 90%;
+}
 
-.p-about_environment_image-left {}
+.p-about_environment_image-right {
+    position: absolute;
+    top: 330px;
+    right: 0;
+    width: 65%;
+    max-width: 240px;
+    @media screen and (min-width: 400px) {
+        top: 380px;
+    }
+    @media screen and (min-width: 480px) {
+        top: 420px;
+    }
+}
 
-.p-about_environment_highlight-right {}
+.p-about_environment_image-left {
+    position: absolute;
+    top: 450px;
+    right: 60%;
+    width: 40%;
+    max-width: 130px;
+    margin: auto;
+    @media screen and (min-width: 400px) {
+        top: 480px;
+        right: 50%;
+    }
+    @media screen and (min-width: 480px) {
+        top: 500px;
+        right: 45%;
+    }
+}
 
-.p-about_environment_text {}
+.p-about_environment_highlight-bottom {
+    position: absolute;
+    right: 0;
+    top: 610px;
+    right: 10%;
+    text-align: right;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 18px;
+    color: $main;
+    @media screen and (min-width: 400px) {
+        top: 650px;
+    }
+}
+
+.p-about_environment_text {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    width: 90%;
+    max-width: 480px;
+    margin: auto;
+    @media screen and (min-width: 400px) {
+        top: 700px;
+    }
+}
 
 .l-sales {
     background: $main url(./../../../images/bg-3.jpg) no-repeat center center;
