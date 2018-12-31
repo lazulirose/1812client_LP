@@ -924,18 +924,11 @@ header {
     }
 }
 
-.p-sales_button.button {
+.p-sales_button {
     position: absolute;
     left: 0;
     right: 0;
     bottom: -20px;
-    width: 300px;
-    height: 50px;
-    margin: auto;
-    background-color: $primary;
-    letter-spacing: 0.5px;
-    font-weight: bold;
-    color: #fff;
 }
 
 
@@ -946,7 +939,6 @@ header {
 .l-instructor {
     padding-bottom: 470px;
     background-color: $sub-color;
-    
 }
 
 .p-instructor_texttag {
@@ -972,7 +964,6 @@ header {
 
 .p-instructor_image-yumi {
     width: 320px;
-   
 }
 
 .p-about_description-yumi {
@@ -1014,7 +1005,6 @@ header {
     position: absolute;
     right: 0;
     width: 320px;
-    
 }
 
 .p-about_description-scott {
@@ -1035,23 +1025,58 @@ header {
 #price.l-price
 ============================*/
 
-.l-price {}
+.l-price {
+    position: relative;
+    background-color: #fff;
+}
 
-.c-titel-price {}
+.c-titel-price {
+    @extend .c-titel;
+    background-color: $primary;
+    text-align: center;
+    color: #fff;
+}
 
 .p-price-table {}
 
-.p-price-table_image {}
+.p-price-image {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    margin: auto;
+}
 
-.p-price-campaign {}
+// TODO
+.p-price-table_image {
+    display: none;
+}
 
-.p-price-campaign_image {}
+.p-price-campaign {
+    display: none;
+}
 
-.p-price-refund {}
+.p-price-campaign_image {
+    display: none;
+}
 
-.p-price-refund_image {}
+.p-price-refund {
+    display: none;
+}
 
-.p-price_button.button {}
+.p-price-refund_image {
+    display: none;
+}
+
+.p-price_button {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    @media screen and (min-width: 480px) {
+        bottom: 60px;
+    }
+}
 
 
 /*============================
