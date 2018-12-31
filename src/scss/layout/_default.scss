@@ -943,29 +943,92 @@ header {
 #instructor.l-instructor
 ============================*/
 
-.l-instructor {}
+.l-instructor {
+    padding-bottom: 470px;
+    background-color: $sub-color;
+    
+}
 
-.p-instructor_texttag {}
+.p-instructor_texttag {
+    margin: 24px 0;
+    padding: 0 5%;
+    text-align: right;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(#fff, .6);
+    font-size: 18px;
+    color: $main;
+    br.sp-only {
+        @media screen and (min-width: 420px) {
+            display: none;
+        }
+    }
+}
 
-.p-instructor-yumi {}
+.p-instructor-yumi {
+    position: relative;
+    max-width: 480px;
+    margin: 0 auto 24px;
+}
 
-.p-instructor_image-yumi {}
+.p-instructor_image-yumi {
+    width: 320px;
+   
+}
 
-.p-about_description-yumi {}
+.p-about_description-yumi {
+    padding: 0 5%;
+}
 
-.p-instructor_yumi {}
+.p-instructor_yumi {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 40px;
+    color: $accent;
+}
 
-.p-instructor_position {}
+.p-instructor_position {
+    margin-bottom: 24px;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: 1px 1px 3px rgba(#fff, .6);
+    color: $main;
+    span {
+        display: block;
+        letter-spacing: 1px;
+    }
+}
 
-.p-about_instructor_description {}
+.p-about_instructor_description {
+    padding: 24px;
+    background-color: rgba(#fff, .8);
+    @include text;
+}
 
-.p-instructor-scott {}
+.p-instructor-scott {
+    position: relative;
+    max-width: 480px;
+    margin: auto;
+}
 
-.p-instructor_image-scott {}
+.p-instructor_image-scott {
+    position: absolute;
+    right: 0;
+    width: 320px;
+    
+}
 
-.p-about_description-scott {}
+.p-about_description-scott {
+    position: relative;
+    top: 420px;
+    padding: 0 5%;
+}
 
-.p-instructor_scott {}
+.p-instructor_scott {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 40px;
+    color: $accent;
+}
 
 
 /*============================
