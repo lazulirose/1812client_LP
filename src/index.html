@@ -230,13 +230,13 @@
             </div>
             <!-- /.l-about -->
             <div class="l-sales">
-               <div class="p-sales">
-                <h2 class="p-sales_title">学費全額返金制度</h2>
-                <p class="p-sales_text">
-                    12週以上お申し込みの方が対象です。最初の４週間以内に結果にご満足いかなければ料金を全額返金します。
-                    <span>※一部条件有（詳しくはパンフレットをご参照ください）</span>
-                </p>
-                <button class="p-sales_button button">パンフレットのダウンロードはこちら</button>
+                <div class="p-sales">
+                    <h2 class="p-sales_title">学費全額返金制度</h2>
+                    <p class="p-sales_text">
+                        12週以上お申し込みの方が対象です。最初の４週間以内に結果にご満足いかなければ料金を全額返金します。
+                        <span>※一部条件有（詳しくはパンフレットをご参照ください）</span>
+                    </p>
+                    <button class="p-sales_button button">パンフレットのダウンロードはこちら</button>
                 </div>
             </div>
             <!-- /.l-sales -->
@@ -295,15 +295,15 @@
             <!-- /.l-price -->
             <div class="l-form" id="form">
                 <h2 class="p-from_title is-show">
-                    英語学習の「最初のステップ」となる学校
-                    <strong>FOUR WORD English Studio</strong>
+                    英語学習の「最初のステップ」となる学校<br>
+                    <strong>FOUR WORD English Studio</strong><br>
                     <span>お問い合わせ、お申込みはこちらから</span>
                 </h2>
                 <div class="p-form">
                     <form action="confirm.php" method="post" name="form" onsubmit="return validate()">
                         <div class="element_wrap is-show">
-                            <input type="radio" name="requirement" value="apply"><label for="">申し込み</label>
-                            <input type="radio" name="requirement" value="contact"><label for="">お問い合わせ</label>
+                             <input type="radio" name="requirement" checked="checked" id="checkbox-1" value="apply"><label for="checkbox-1">お申し込み</label>
+                            <input type="radio" name="requirement" id="checkbox-2" value="contact"><label for="checkbox-2">お問い合わせ</label>
                         </div>
                         <div class="element_wrap is-show">
                             <label>氏名<span class="c-bach-entry">必須</span></label>
@@ -315,50 +315,49 @@
                         </div>
                         <div class="element_wrap is-show">
                             <label>ご職業<span class="c-bach-entry">必須</span></label>
-                            <input type="tel" name="tel" value="<?php if( !empty($_POST['tel']) ){ echo $_POST['tel']; } ?>" placeholder="090-0000-0000" required>
+                            <input type="text" name="tel" value="<?php if( !empty($_POST['tel']) ){ echo $_POST['tel']; } ?>" placeholder="090-0000-0000" required>
                         </div>
                         <div class="element_wrap is-show">
                             <label>お問い合わせ内容</label>
                             <textarea name="contact" placeholder="簡単な自己紹介をご記入ください。"><?php if( !empty($_POST['contact']) ){ echo $_POST['contact']; } ?></textarea>
                         </div>
-                        <input class="is-show" type="submit" name="btn_confirm" value="送信">
+                        <input class="is-show p-from_button" type="submit" name="btn_confirm" value="送信">
                     </form>
                 </div>
             </div>
             <!-- /.l-form -->
-            <fotter class="l-fotter">
-                <ul class="p-fotter_sns">
-                    <li class="p-fotter_sns_icon">
-                        <a href="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="61.071" height="59.605" viewBox="0 0 61.071 59.605"><g transform="translate(-107 -17282.916)"><path d="M67.071,57.326A8.382,8.382,0,0,1,58.589,65.6H14.482A8.381,8.381,0,0,1,6,57.326V14.278A8.381,8.381,0,0,1,14.482,6H58.589a8.381,8.381,0,0,1,8.482,8.278Z" transform="translate(101 17276.916)" fill="#fff"/><path d="M42.478,33.562h-5.77V55.838H28.141V33.562H23V26.708h5.141v-4.13c.007-6.011,2.5-9.578,9.585-9.578h5.837v6.854H39.647c-2.758,0-2.938,1.031-2.938,2.952v3.9h6.854Z" transform="translate(113.331 17279.076)" fill="transparent"/></g>
+        </main>
+        <fotter class="l-fotter">
+            <ul class="p-fotter_sns">
+                <li class="p-fotter_sns_icon">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="61.071" height="59.605" viewBox="0 0 61.071 59.605"><g transform="translate(-107 -17282.916)"><path d="M67.071,57.326A8.382,8.382,0,0,1,58.589,65.6H14.482A8.381,8.381,0,0,1,6,57.326V14.278A8.381,8.381,0,0,1,14.482,6H58.589a8.381,8.381,0,0,1,8.482,8.278Z" transform="translate(101 17276.916)" fill="#fff"/><path d="M42.478,33.562h-5.77V55.838H28.141V33.562H23V26.708h5.141v-4.13c.007-6.011,2.5-9.578,9.585-9.578h5.837v6.854H39.647c-2.758,0-2.938,1.031-2.938,2.952v3.9h6.854Z" transform="translate(113.331 17279.076)" fill="#004A7B"/></g>
                             </svg>
-                        </a>
-                    </li>
-                    <li class="p-fotter_sns_icon">
-                        <a href="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="61.071" height="61.07" viewBox="0 0 61.071 61.07">
+                    </a>
+                </li>
+                <li class="p-fotter_sns_icon">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="61.071" height="61.07" viewBox="0 0 61.071 61.07">
                             <path d="M21.044,3A18.061,18.061,0,0,0,3,21.044V46.027A18.061,18.061,0,0,0,21.044,64.071H46.027A18.061,18.061,0,0,0,64.071,46.027V21.044A18.061,18.061,0,0,0,46.027,3ZM50.191,14.1a2.776,2.776,0,1,1-2.776,2.776A2.784,2.784,0,0,1,50.191,14.1ZM33.535,18.268A15.268,15.268,0,1,1,18.268,33.535,15.277,15.277,0,0,1,33.535,18.268Zm0,2.776A12.492,12.492,0,1,0,46.027,33.535,12.511,12.511,0,0,0,33.535,21.044Z" transform="translate(-3 -3)" fill="#fff"/>
                             </svg>
-                        </a>
-                    </li>
-                    <li class="p-fotter_sns_icon">
-                        <a href="">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="61.071" height="48.367" viewBox="0 0 61.071 48.367">
+                    </a>
+                </li>
+                <li class="p-fotter_sns_icon">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="61.071" height="48.367" viewBox="0 0 61.071 48.367">
                             <path d="M67.067,14.72a25.685,25.685,0,0,1-7.2,1.935,12.366,12.366,0,0,0,5.513-6.769,25.374,25.374,0,0,1-7.958,2.964A12.612,12.612,0,0,0,48.282,9,12.374,12.374,0,0,0,35.753,21.209a12.111,12.111,0,0,0,.325,2.782A35.876,35.876,0,0,1,10.257,11.228a11.894,11.894,0,0,0-1.7,6.15,12.126,12.126,0,0,0,5.572,10.164,12.882,12.882,0,0,1-5.678-1.525v.143A12.312,12.312,0,0,0,18.5,38.142a12.744,12.744,0,0,1-3.293.436,13.339,13.339,0,0,1-2.359-.228,12.518,12.518,0,0,0,11.7,8.483A25.612,25.612,0,0,1,8.984,52.065,25.088,25.088,0,0,1,6,51.889,36.277,36.277,0,0,0,25.2,57.368,34.941,34.941,0,0,0,60.858,22.617c0-.528-.02-1.055-.046-1.57a24.569,24.569,0,0,0,6.255-6.326" transform="translate(-5.996 -9)" fill="#fff"/>
                             </svg>
-                        </a>
-                    </li>
-                </ul>
-                <div class="p-fotter_target">
-                    <a href="" class="p-fotter_target_link"></a>
-                </div>
-                <div class="p-fotter_gototop">
-                    <a href="" class="p-fotter_gototop_link"><img src="" alt=""></a>
-                </div>
-                <small class="copyright">Copyright © TARGET Global English Academy All Rights Reserved.</small>
-            </fotter>
-        </main>
+                    </a>
+                </li>
+            </ul>
+            <div class="p-fotter_target">
+                <a href="" class="p-fotter_target_link">TARGET</a>
+            </div>
+            <div class="p-fotter_gototop">
+                <a href="" class="p-fotter_gototop_link"><img src="./../images/top.png" alt=""></a>
+            </div>
+            <small class="copyright">Copyright © TARGET Global English Academy All Rights Reserved.</small>
+        </fotter>
     </div>
 </body>
-
 </html>
