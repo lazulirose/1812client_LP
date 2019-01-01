@@ -98,8 +98,11 @@ $important: false) {
 }
 
 // text-shadow
-@mixin text-shadow($opacity: .16) {
-    text-shadow: 1px 1px 3px rgba(#000, $opacity);
+//@mixin text-shadow($opacity: .16) {
+//    text-shadow: 1px 1px 3px rgba(#000, $opacity);
+//}
+@mixin text-shadow{
+    text-shadow: rgba(0, 0, 0, 0.16) 1px 1px 1px;
 }
 @mixin text {
     line-height: 1.68;

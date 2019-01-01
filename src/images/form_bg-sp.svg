@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="576" height="1786" viewBox="0 0 576 1786">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="576" height="1786" transform="translate(0 15716)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g transform="translate(0 -15716)" clip-path="url(#clip-path)">
+    <rect width="809.635" height="474.13" transform="translate(-99 15908.766) rotate(-15)" fill="#004A7B"/>
+    <rect width="575.635" height="1525.13" transform="translate(0 15976.914)" fill="#004A7B"/>
+  </g>
+</svg>

@@ -374,6 +374,7 @@ header {
 
 .c-card_body_text {
     @include text;
+    @include text-shadow;
 }
 
 
@@ -601,6 +602,7 @@ header {
 .p-solution_content_body_text {
     line-height: 1.58;
     letter-spacing: .8px;
+    @include text-shadow;
 }
 
 .p-solution_conclusion {
@@ -611,6 +613,7 @@ header {
     letter-spacing: 1.8px;
     line-height: 1.68;
     text-align: center;
+    @include text-shadow;
     font-weight: bold;
     font-size: 18px;
     &::before {
@@ -701,6 +704,7 @@ header {
     width: 90%;
     max-width: 480px;
     margin: auto;
+    @include text-shadow;
     @media screen and (min-width: 400px) {
         top: 540px;
     }
@@ -881,6 +885,7 @@ header {
     width: 90%;
     max-width: 480px;
     margin: auto;
+    @include text-shadow;
     @media screen and (min-width: 400px) {
         top: 700px;
     }
@@ -897,7 +902,7 @@ header {
     z-index: auto;
     max-width: 480px;
     margin: auto;
-    padding: 32px 16px;
+    padding: 32px 5%;
     background-color: rgba(#fff, .9);
 }
 
@@ -913,6 +918,7 @@ header {
 .p-sales_text {
     line-height: 1.6;
     letter-spacing: 1px;
+    @include text-shadow;
     span {
         display: block;
         margin: 4px 0 24px;
@@ -993,6 +999,7 @@ header {
     padding: 24px;
     background-color: rgba(#fff, .8);
     @include text;
+    @include text-shadow;
 }
 
 .p-instructor-scott {
@@ -1088,34 +1095,36 @@ header {
 .l-form {
     position: relative;
     z-index: auto;
-    background-color: $main;
-    //TODO
-    //        &::before {
-    //            content: "";
-    //            display: block;
-    //            position: absolute;
-    //            top: 0%;
-    //            left: -10%;
-    //            //z-index: -1;
-    //            display: block;
-    //            width: 120%;
-    //            height: 200%;
-    //            background-image: url(./../../../images/form_bg.svg);
-    //        background-size: cover;
-    //        background-repeat: no-repeat;
-    //
-    //    
-    //            @media screen and (min-width: 470px) {
-    //                    top: -25%;
-    //     
-    //            }
-    //            @media screen and (min-width: 590px) {
-    //                top: -30%;
-    //            }
-    //            @media screen and (min-width: 730px) {
-    //                top: -35%;
-    //            }
-    //        }
+    padding-bottom: 80px;
+    background-color: rgba(#fff, .4);
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        //TODO
+        top: -20%;
+        left: -10%;
+        //z-index: -1;
+        display: block;
+        width: 120%;
+        height: 200%;
+        //background-image: url(./../../../images/form_bg-sp.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        @media screen and (min-width: 470px) {
+            top: -25%;
+        }
+        @media screen and (min-width: 590px) {
+            top: -30%;
+        }
+        @media screen and (min-width: 730px) {
+            top: -35%;
+            //background-image: url(./../../../images/form_bg-pc.svg);
+        }
+        @media screen and (min-width: 1200px) {
+            background-image: url(none);
+        }
+    }
 }
 
 .p-from_title {
