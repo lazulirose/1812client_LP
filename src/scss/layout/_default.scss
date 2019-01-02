@@ -47,7 +47,9 @@ header {
     display: none;
 }
 
-
+main {
+    position: relative;
+}
 /*============================
 #loader-text.p-loading.tagline
 ============================*/
@@ -88,6 +90,7 @@ header {
 
 .l-keyviasual_inner {
     position: relative;
+    z-index: 9999;
     @include mq-up(md) {
         max-width: 1280px;
         margin: auto;
@@ -232,8 +235,26 @@ header {
 }
 
 .l-introduction {
+    position: relative;
+    z-index: auto;
     padding: 230px 5% 0;
     background-color: rgba(#fff, .8);
+    @include mq-up(md) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 160px;
+    }
+    @include mq-up(lg) {
+        position: relative;
+        padding-left: 15%;
+        padding-top: 160px;
+        background: linear-gradient(90deg, rgba(#fff, 0) 0%, rgba(#fff,0) 10%, rgba(#fff,.8) 10%, rgba(#fff,.8) 100%);
+    }
+    @media screen and (min-width: 1280px){
+        padding-top: 200px;
+        
+    }
 }
 
 .p-introduction-first {
@@ -245,6 +266,9 @@ header {
     font-weight: bold;
     font-size: 24px;
     color: $main;
+    @include mq-up(md) {
+        width: 50%;
+    }
     strong {
         font-size: 32px;
     }
@@ -266,8 +290,16 @@ header {
     max-width: 480px;
     margin: auto;
     padding-bottom: 60px;
+    font-size: 100%;
     @include text;
     @include text-shadow;
+    color: $main;
+    @include mq-up(md) {
+        width: 50%;
+    } 
+    @include mq-up(lg) {
+    font-size: 18px;
+    }
     &::before {
         content: "";
         display: inline-block;
@@ -327,12 +359,22 @@ header {
     font-weight: bold;
     text-align: center;
     color: $main;
+        @include mq-up(lg) {
+        position: relative;
+        padding-left: 20%;
+        background: linear-gradient(90deg, rgba(#fff, 0) 0%, rgba(#fff,0) 10%, rgba(#fff,.8) 10%, rgba(#fff,.8) 100%);
+    }
 }
 
 .p-problem_list {
     position: relative;
     max-width: 480px;
     margin: auto;
+    @include mq-up(lg){
+        max-width: 650px;
+        margin: inherit;
+        font-size: 20px;
+    }
 }
 
 .p-problem_list::before,
@@ -345,16 +387,27 @@ header {
     font-style: italic;
     font-size: 60px;
     color: $sub-color;
+    @include mq-up(lg){
+        font-size: 100px;
+    }
 }
 
 .p-problem_list:nth-child(odd)::before {
     left: 0;
     text-align: left;
+    @include mq-up(lg){
+        top: -160px;
+        left: 16px;
+    }
 }
 
 .p-problem_list:nth-child(even)::before {
     right: 0;
     text-align: right;
+    @include mq-up(lg){
+        top: -160px;
+        right: 16px;
+    }
 }
 
 .p-problem_list:nth-child(1)::before,
@@ -502,7 +555,7 @@ header {
             left: 60px;
         }
         & .p-solution_content_body_title {
-            margin: 40px 16px 28px 0;
+            margin: 40px 40px 28px 0;
             text-align: right;
             &::after {
                 content: "02";
