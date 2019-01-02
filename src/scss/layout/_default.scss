@@ -828,8 +828,8 @@
                 padding-left: 15px;
                 text-align: center;
                 @include mq-up(lg) {
-                    top: -445px;
-                    right: 50px;
+                    top: -465px;
+                    right: 30px;
                 }
                 &::after {
                     content: "04";
@@ -838,8 +838,8 @@
                     bottom: 270px;
                     z-index: 9999;
                     @include mq-up(lg) {
-                        left: -550px;
-                        bottom: -160px;
+                        left: -570px;
+                        bottom: -170px;
                     }
                 }
             }
