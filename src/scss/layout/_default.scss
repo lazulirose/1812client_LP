@@ -592,7 +592,7 @@
     
     .l-solution {
         position: relative;
-        background: $main url(./../../../images/bg-2.jpg) no-repeat center center;
+        //background: $main url(./../../../images/bg-2.jpg) no-repeat center center;
         background-size: cover;
         background-attachment: fixed;
         @include mq-up(lg) {
@@ -813,7 +813,7 @@
                 top: -230px;
                 @include mq-up(lg) {
                     top: -713px;
-                    left: -6px;
+                    left: -9px;
                 }
                 &::before {
                     bottom: -40px;
