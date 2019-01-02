@@ -351,7 +351,12 @@ main {
 #problem.l-problem
 ============================*/
 
-.l-problem {}
+.l-problem {
+    position: relative;
+    .c-titel{
+        top: 0;
+    }
+}
 
 .c-titel {
     position: relative;
@@ -375,7 +380,6 @@ main {
         letter-spacing: 2.8px;
         font-weight: bold;
         font-size: 18px;
-
     }
     @include mq-up(md) {
         h2 {
@@ -388,6 +392,7 @@ main {
     }
     @include mq-up(lg) {
         position: absolute;
+        top: -90px;
         width: 80%;
         padding: 32px 5%;
         text-align: center;
@@ -426,7 +431,6 @@ main {
     @include mq-up(lg) {
         max-width: 650px;
         margin: inherit;
-        
         font-size: 20px;
     }
 }
@@ -505,15 +509,15 @@ main {
         top: 140px;
         left: -220px;
     }
-        .c-card:nth-child(2)::before {
+    .c-card:nth-child(2)::before {
         top: 240px;
         right: -220px;
     }
-        .c-card:nth-child(3)::before {
+    .c-card:nth-child(3)::before {
         top: 320px;
         left: -220px;
     }
-        .c-card:nth-child(4)::before {
+    .c-card:nth-child(4)::before {
         top: 280px;
         right: -220px;
     }
@@ -548,7 +552,7 @@ main {
         &:nth-child(3) {
             margin-top: -220px;
         }
-        &:nth-child(4){
+        &:nth-child(4) {
             margin-top: 20px;
         }
     }
@@ -1160,6 +1164,7 @@ main {
 ============================*/
 
 .l-instructor {
+    position: relative;
     padding-bottom: 470px;
     background-color: $sub-color;
 }
@@ -1259,6 +1264,7 @@ main {
 .c-titel-price {
     @extend .c-titel;
     position: relative !important;
+    top: 0 !important;
     width: 100%;
     background-color: $main;
     text-align: center;
