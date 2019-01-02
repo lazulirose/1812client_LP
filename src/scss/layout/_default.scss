@@ -50,6 +50,8 @@ header {
 main {
     position: relative;
 }
+
+
 /*============================
 #loader-text.p-loading.tagline
 ============================*/
@@ -249,11 +251,10 @@ main {
         position: relative;
         padding-left: 15%;
         padding-top: 160px;
-        background: linear-gradient(90deg, rgba(#fff, 0) 0%, rgba(#fff,0) 10%, rgba(#fff,.8) 10%, rgba(#fff,.8) 100%);
+        background: linear-gradient(90deg, rgba(#fff, 0) 0%, rgba(#fff, 0) 10%, rgba(#fff, .8) 10%, rgba(#fff, .8) 100%);
     }
-    @media screen and (min-width: 1280px){
+    @media screen and (min-width: 1280px) {
         padding-top: 200px;
-        
     }
 }
 
@@ -296,9 +297,9 @@ main {
     color: $main;
     @include mq-up(md) {
         width: 50%;
-    } 
+    }
     @include mq-up(lg) {
-    font-size: 18px;
+        font-size: 18px;
     }
     &::before {
         content: "";
@@ -348,6 +349,21 @@ main {
         font-weight: bold;
         font-size: 18px;
     }
+    @include mq-up(lg) {
+        position: absolute;
+        width: 80%;
+        height: 200px;
+        padding: 24px 5%;
+        text-align: center;
+        h2 {
+            max-width: inherit;
+            font-size: 80px;
+        }
+        h3 {
+            max-width: inherit;
+            font-size: 24px;
+        }
+    }
 }
 
 .p-problem {
@@ -359,10 +375,10 @@ main {
     font-weight: bold;
     text-align: center;
     color: $main;
-        @include mq-up(lg) {
+    @include mq-up(lg) {
         position: relative;
         padding-left: 20%;
-        background: linear-gradient(90deg, rgba(#fff, 0) 0%, rgba(#fff,0) 10%, rgba(#fff,.8) 10%, rgba(#fff,.8) 100%);
+        background: linear-gradient(90deg, rgba(#fff, 0) 0%, rgba(#fff, 0) 10%, rgba(#fff, .8) 10%, rgba(#fff, .8) 100%);
     }
 }
 
@@ -370,7 +386,7 @@ main {
     position: relative;
     max-width: 480px;
     margin: auto;
-    @include mq-up(lg){
+    @include mq-up(lg) {
         max-width: 650px;
         margin: inherit;
         font-size: 20px;
@@ -387,7 +403,7 @@ main {
     font-style: italic;
     font-size: 60px;
     color: $sub-color;
-    @include mq-up(lg){
+    @include mq-up(lg) {
         font-size: 100px;
     }
 }
@@ -395,7 +411,7 @@ main {
 .p-problem_list:nth-child(odd)::before {
     left: 0;
     text-align: left;
-    @include mq-up(lg){
+    @include mq-up(lg) {
         top: -160px;
         left: 16px;
     }
@@ -404,7 +420,7 @@ main {
 .p-problem_list:nth-child(even)::before {
     right: 0;
     text-align: right;
-    @include mq-up(lg){
+    @include mq-up(lg) {
         top: -160px;
         right: 16px;
     }
@@ -1153,7 +1169,9 @@ main {
 
 .c-titel-price {
     @extend .c-titel;
-    background-color: $primary;
+    position: relative !important;
+    width: 100%;
+    background-color: $main;
     text-align: center;
     color: #fff;
 }
