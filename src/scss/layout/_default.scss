@@ -224,7 +224,8 @@ main {
         width: 80%;
         right: 10%;
         max-width: 680px;
-    } @include mq-up(lg){
+    }
+    @include mq-up(lg) {
         font-size: 18px;
     }
     &::before {
@@ -275,25 +276,40 @@ main {
     max-width: 480px;
     margin: 0 auto 40px;
     letter-spacing: 2.5px;
+    text-align: center;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 20px;
     color: $main;
-    @include mq-up(md) {
-        width: 50%;
-    }
     strong {
+        display: inline-block;
+        margin-bottom: -4px;
         font-size: 32px;
     }
-    &::after {
-        content: "";
-        display: block;
-        position: absolute;
-        bottom: 36px;
-        z-index: -1;
-        width: 315px;
-        height: 12px;
-        background-color: $sub-color;
+    em {
+        line-height: 2.5;
+        background-image: linear-gradient(transparent 60%, $sub-color 40%);
     }
+    @include mq-up(md) {
+        text-align: left;
+        width: 50%;
+        font-size: 24px;
+    }
+    @include mq-up(lg) {
+        width: 60%;
+        strong {
+            font-size: 40px;
+        }
+    }
+//    &::after {
+//        content: "";
+//        display: block;
+//        position: absolute;
+//        bottom: 36px;
+//        z-index: -1;
+//        width: 315px;
+//        height: 12px;
+//        background-color: $sub-color;
+//    }
 }
 
 .p-introduction-second {
@@ -307,9 +323,10 @@ main {
     @include text-shadow;
     color: $main;
     @include mq-up(md) {
-        width: 50%;
+        width: 40%;
     }
     @include mq-up(lg) {
+        width: 40%;
         font-size: 18px;
     }
     &::before {
@@ -345,7 +362,7 @@ main {
     color: $main;
     h2 {
         max-width: 480px;
-        margin: 0 auto 4px;
+        margin-bottom: 4px;
         line-height: 1.2;
         letter-spacing: 2px;
         font-weight: 900;
@@ -354,17 +371,24 @@ main {
     }
     h3 {
         max-width: 480px;
-        margin: auto;
         line-height: 1.4;
         letter-spacing: 2.8px;
         font-weight: bold;
         font-size: 18px;
     }
+    @include mq-up(md){
+        h2{
+            font-size: 40px;
+        }
+        h3{
+            line-height: 1.5;
+            font-size: 20px;
+        }
+    }
     @include mq-up(lg) {
         position: absolute;
         width: 80%;
-        height: 200px;
-        padding: 24px 5%;
+        padding: 32px 5%;
         text-align: center;
         h2 {
             max-width: inherit;
