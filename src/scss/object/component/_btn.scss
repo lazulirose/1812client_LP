@@ -26,4 +26,9 @@
     letter-spacing: 0.5px;
     font-weight: bold;
     color: #fff;
+    @include mq-up(lg) {
+        width: 600px;
+        height: 80px;
+        font-size: 20px;
+    }
 }
