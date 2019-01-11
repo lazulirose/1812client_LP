@@ -72,6 +72,50 @@
     background-color: #000;
 }
 
+.motion-txt {
+    display: inherit;
+    position: relative;
+    overflow: hidden;
+}
+
+.motion-txt:after {
+    content: '';
+    position: absolute;
+    z-index: 999999999999999999999;
+    opacity: 1;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    transform: translate3d(-101%, 0, 0);
+}
+
+.js-scroll.show .motion-txt:after {
+    transition-property: transform, opacity;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transform: translate3d(0, 0, 0);
+}
+
+.js-scroll.done .motion-txt:after {
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transform: translate3d(103%, 0, 0);
+}
+
+.motion-txt .motion-inner {
+    display: inline-block;
+    opacity: 0;
+}
+
+.js-scroll.done .motion-txt .motion-inner {
+    opacity: 1;
+}
+
 
 /*****-------------------------------
     Animations (keyframes)

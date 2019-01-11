@@ -29,7 +29,6 @@
 
 -------------------------------*****/
 
-@import "layout/grid-bs";
 @import "layout/default";
 
 /*****-------------------------------
@@ -40,7 +39,7 @@
 
 @import "object/component/btn";
 //@import "object/component/nav";
-//@import "object/component/text";
+@import "object/component/text";
 //@import "object/component/card";
 
 /*****-------------------------------
