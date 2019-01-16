@@ -2,40 +2,112 @@
 #is-scrolled.l-header
 ============================*/
         
-        .l-header {}
+        .l-header {
+            position: relative;
+            z-index: 99999999;
+            width: 100%;
+            padding: 8px 2.5% 0;
+            @media screen and (min-width: 770px) {
+    
+                background-color: #fff;
+            }
+        }
         
-        .c-nav {}
+        .c-nav {
+            @media screen and (min-width: 770px) {
+                max-width: 2000px;
+                display: flex;
+                justify-content: center;
+            }
+        }
         
-        .c-nav_logo {}
+        .c-nav_logo {
+            @media screen and (min-width: 770px) {
+                width: 100%;
+                max-width: 270px;
+            }
+        }
         
-        .logo {}
+        .logo {
+            height: 70px;
+            padding: 10px;
+        }
         /*============================
 #is-menuclose.c-nav_toggle
 ============================*/
         
         .c-nav_toggle {}
         
-        .menu_tag {}
+        .menu_tag {
+            @media screen and (min-width: 770px) {
+                display: none;
+            }
+        }
         
         .menu_button {}
         /*============================
 #is-open.c-menu
 ============================*/
         
-        .c-menu {}
+        .c-menu {
+            @media screen and (min-width: 770px) {
+                width: 100%;
+                max-width: 1280px;
+            }
+        }
         
-        .c-menu_body {}
+        .c-menu_body {
+            @media screen and (min-width: 770px) {
+                display: flex;
+                justify-content: space-evenly;
+                align-content: center;
+                align-items: center;
+            }
+        }
         
-        .menu_link {}
+        .menu_link {
+            font-weight: bold;
+            color: $main-font;
+            font-size: 16px;
+            @media screen and (min-width: 1080px) {
+                font-size: 20px;
+            }
+        }
         
-        .menu_entry {}
+        .menu_entry {
+            position: relative;
+            &::before {
+                content: "APPLICATION&CONTACT";
+                position: absolute;
+                z-index: -1;
+                bottom: -130px;
+                right: -124px;
+                display: block;
+                width: 280px;
+                padding-bottom: 8px;
+                text-align: right;
+                font-size: 20px;
+                transform: rotate(90deg);
+                border-bottom: 1px solid $primary;
+                @extend .menu_link
+            }
+            &::after {
+                content: "お申込み＆お問い合わせ";
+                position: absolute;
+                right: 45px;
+                bottom: -272px;
+                display: block;
+                height: 280px;
+                writing-mode: vertical-rl;
+                text-align: center;
+                letter-spacing: 7.5px;
+                font-weight: bold;
+                color: $main-font;
+            }
+        }
         /*============================
 #loader.l-loading
 ============================*/
-        
-        header {
-            display: none;
-        }
         
         main {
             position: relative;
@@ -59,17 +131,16 @@
                 height: 60vh;
                 background-color: #fff;
                 @include mq-up(md) {
-                    height: 45vh;
+                    height: 55vh;
                 }
                 @media screen and (min-width: 958px) {
-                    height: 45vh;
+                    height: 65vh;
                 }
                 @include mq-up(lg) {
                     margin: auto;
                 }
             }
             @include mq-up(md) {
-                top: 56px;
                 right: 10%;
             }
             @include mq-up(lg) {
@@ -981,7 +1052,7 @@
             font-weight: bold;
             font-size: 18px;
             @include mq-up(lg) {
-                    top: -1050px;
+                top: -1050px;
                 left: 80px;
                 max-width: 1032px;
                 margin: auto;

@@ -3,7 +3,7 @@
 -------------------------------*****/
 
 #is-open {
-    @include mq-down(lg) {
+      @media screen and (max-width: 770px) {
         display: none;
         width: 100vw;
         height: 100vh;
@@ -22,19 +22,20 @@
         color: #000 !important;
     }
     .c-nav {
-        @include mq-up(lg) {
+       @media screen and (min-width: 770px) {
+
             padding-top: 0;
         }
     }
     // Mobile header
-    //    .menu__tag {
-    //        color: #000 !important;
-    //    }
-    //    .c-nav__toggle,
-    //    .c-nav__toggle::before,
-    //    .c-nav__toggle::after {
-    //        background-color: #000 !important;
-    //    }
+        .menu__tag {
+            color: #000 !important;
+        }
+        .c-nav__toggle,
+        .c-nav__toggle::before,
+        .c-nav__toggle::after {
+            background-color: #000 !important;
+        }
 }
 
 
