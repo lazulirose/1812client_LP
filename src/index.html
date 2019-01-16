@@ -48,7 +48,7 @@
                     </a>
                 </h1>
                 <div class="c-nav_toggle" id="is-menuclose">
-                    <p class="menu_tag">MENU</p><button class="menu_button" onclick="navigationTrigger()"></button></div>
+                    <button onclick="navigationTrigger()"><span class="menu_button menu_tag">MENU</span><img src="./images/arrow.svg" alt=""></button></div>
                 <div class="c-menu" id="is-open">
                     <ul class="c-menu_body">
                         <li>
@@ -73,15 +73,13 @@
         </header>
         <!-- /.l-header -->
         <main>
-            <!--
            <div id="loader" class="l-loading">
-
                 <div id="loader-text" class="p-loading tagline">
-                    <img src="./images/tagline-black.png" alt="人生はココカラ始まる">
+                   <p>TAKE THE FIRST STEP<br>
+                    Four Word English Studio</p>
                 </div>
             </div>
--->
-            <div class="l-keyviasual">
+            <div class="l-keyviasual" id="keyviasual">
                 <div class="l-keyviasual_inner">
                     <div class="p-keyviasual">
                         <picture class="">
@@ -403,13 +401,13 @@
     <script src="./js/script.js"></script>
     <script>
         window.onload = function() {
-            var lastWidget = document.getElementById("about");
+            var lastWidget = document.getElementById("index");
             var distanceFromTheTop = lastWidget.getBoundingClientRect().top + window.pageYOffset;
             window.onscroll = function() {
                 if (window.pageYOffset > distanceFromTheTop) {
-                    document.getElementById("is-scrolled").classList.add("hradder-scrolled");
+                    document.getElementById("is-scrolled").classList.add("header-scrolled");
                 } else {
-                    document.getElementById("is-scrolled").classList.remove("hradder-scrolled");
+                    document.getElementById("is-scrolled").classList.remove("header-scrolled");
                 }
             }
         }
@@ -470,7 +468,6 @@
         });
 
         var scroll = new SmoothScroll('a[href*="#"]');
-
         const loading = document.getElementById("loader-text");
         const bg = document.getElementById("loader");
         loading.addEventListener("animationend", function() {
@@ -511,9 +508,6 @@
             });
         });
     </script>
-
-
-
 </body>
 
 </html>

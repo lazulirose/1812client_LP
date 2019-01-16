@@ -2,40 +2,117 @@
     JavaScript interactions
 -------------------------------*****/
 
+
+/*****-------------------------------
+    Loading style
+-------------------------------*****/
+
+.p-loading {
+    display: flex;
+    p {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        max-width: 320px;
+        height: 40px;
+        margin: auto;
+        line-height: 2;
+        text-align: center;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 24px;
+        color: $main;
+        animation: text-down 6.3s;
+        @include mq-down(md) {
+            bottom: 20%;
+        }
+        @include mq-up(lg) {
+            padding-bottom: 190px;
+            max-width: 800px;
+            font-size: 60px;
+        }
+    }
+}
+
+.p-loading::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+    width: 350px;
+    height: 50px;
+    margin: auto;
+    background-color: #fff;
+    content: "";
+    animation: text-in 7s ease-in-out .6s;
+    @include mq-down(md) {
+        bottom: 20%;
+        
+    }
+    @include mq-up(lg) {
+        width: 800px;
+        height: 120px !important;
+        animation: text-in-lg 5s ease-in-out .6s;
+    }
+}
+
+.c-nav_toggle {
+    position: fixed;
+    z-index: 999999;
+    button {
+        background-color: transparent;
+    }
+    img {
+        position: absolute;
+        top: -50px;
+        left: 20px;
+        display: none;
+    }
+    @include mq-up(lg) {
+        display: none;
+        transition: .8s;
+    }
+}
+
 #is-open {
-      @media screen and (max-width: 770px) {
+    display: block;
+    @media screen and (max-width: 770px) {
+        position: fixed;
+        top: 0;
+        z-index: 9999;
         display: none;
         width: 100vw;
         height: 100vh;
+        padding-top: 25%;
         text-align: center;
         background-color: rgba(#fff, .9);
     }
 }
 
-.hradder-scrolled {
-    background-color: #fff;
+.header-scrolled {
+    position: fixed !important;
     transition: .3s;
-    .logo .cls-1 {
-        fill: #000;
+    @media screen and (min-width: 770px) {
+        .menu_entry::before, .menu_entry::after {
+            display: none;
+        }
     }
-    li:not(:last-child) .menu__link {
-        color: #000 !important;
-    }
-    .c-nav {
-       @media screen and (min-width: 770px) {
+}
 
-            padding-top: 0;
-        }
-    }
-    // Mobile header
-        .menu__tag {
-            color: #000 !important;
-        }
-        .c-nav__toggle,
-        .c-nav__toggle::before,
-        .c-nav__toggle::after {
-            background-color: #000 !important;
-        }
+.menu__button {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    display: block;
+    width: 90px;
+    height: 44px;
 }
 
 
@@ -45,32 +122,37 @@
     menu-bar03 is after
 -------------------------------*****/
 
-.open-anime.c-nav__toggle::before {
+.open-anime.c-nav_toggle::before {
     animation: menu-bar01 .75s forwards;
 }
 
-.open-anime.c-nav__toggle {
-    transition: all .25s .25s;
-    background-color: #fff;
+.open-anime {
+    .c-menu {
+        animation: test .8s;
+    }
 }
 
-.open-anime.c-nav__toggle::after {
-    animation: menu-bar02 .75s forwards;
+.open-anime.c-nav_toggle {
+    transition: .8s;
 }
 
-.close-anime.c-nav__toggle::before {
-    animation: active-menu-bar01 .75s forwards;
-    background-color: #000;
+.c-menu {
+    transform: translateX(0);
 }
 
-.close-anime.c-nav__toggle {
-    background-color: transparent;
+.close-anime .c-menu {
+    animation: test .8s;
 }
 
-.close-anime.c-nav__toggle::after {
-    opacity: 1;
-    animation: active-menu-bar03 .75s forwards;
-    background-color: #000;
+.close-anime.c-nav_toggle {
+    transition: .8s;
+    & img {
+        display: block;
+        background-color: transparent;
+    }
+    span {
+        display: none;
+    }
 }
 
 .motion-txt {
@@ -167,60 +249,6 @@
 }
 
 
-/* --- nav open --- */
-
-@keyframes menu-bar01 {
-    0% {
-        transform: translateY(7px) rotate(45deg);
-    }
-    50% {
-        transform: translateY(7px) rotate(0);
-    }
-    100% {
-        transform: translateY(0) rotate(0);
-    }
-}
-
-@keyframes menu-bar02 {
-    0% {
-        transform: translateY(-7px) rotate(-45deg);
-    }
-    50% {
-        transform: translateY(-7px) rotate(0);
-    }
-    100% {
-        transform: translateY(0) rotate(0);
-    }
-}
-
-
-/* --- nav close --- */
-
-@keyframes active-menu-bar01 {
-    0% {
-        transform: translateY(0) rotate(0);
-    }
-    50% {
-        transform: translateY(7px) rotate(0);
-    }
-    100% {
-        transform: translateY(7px) rotate(45deg);
-    }
-}
-
-@keyframes active-menu-bar03 {
-    0% {
-        transform: translateY(0) rotate(0);
-    }
-    50% {
-        transform: translateY(-7px) rotate(0);
-    }
-    100% {
-        transform: translateY(-7px) rotate(-45deg);
-    }
-}
-
-
 /* --- show text --- */
 
 @keyframes text {
@@ -237,18 +265,5 @@
         transform: translateY(0);
         opacity: 1;
         text-shadow: none;
-    }
-}
-
-
-/* --- scroll down --- */
-
-@keyframes arrow-down {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(15px);
-        opacity: 0;
     }
 }
