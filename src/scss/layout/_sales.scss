@@ -1,0 +1,23 @@
+.l-sales {
+    position: relative;
+    background-color: #fff;
+    @include mq-up(lg) {
+        padding-bottom: 440px;
+        margin-bottom: -30px;
+    }
+    img {
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+}
+
+.p-sales_button {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    @include mq-up(lg) {
+            bottom: 230px;
+    }
+}

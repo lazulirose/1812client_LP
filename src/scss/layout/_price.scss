@@ -1,0 +1,80 @@
+
+/*============================
+#price.l-price
+============================*/
+
+.p-bg {
+    position: relative;
+    z-index: 9999;
+    -webkit-text-size-adjust: 100%;
+    background: #fff url(./../../../images/bg-2.png) repeat center center;
+
+}
+
+.l-price {
+    position: relative;
+    z-index: auto;
+    padding-bottom: 60px;
+    background-color: rgba(#fff, .4);
+    @include mq-up(lg)  {
+        padding-bottom: 160px;
+    }
+    img {
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+}
+
+.c-titel-price {
+    @extend .c-titel;
+    position: relative !important;
+    top: 0 !important;
+    width: 100%;
+    background-color: $main;
+    text-align: center;
+    color: #fff;
+    h2,
+    h3 {
+        max-width: inherit;
+    }
+}
+
+.p-price {
+    margin: 80px 5%;
+    
+}
+.p-price-table {}
+
+.p-price-image {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    margin: auto;
+}
+
+// TODO
+.p-price-table {
+   margin-bottom: 48px;
+}
+
+.p-price-campaign {
+    margin-bottom: 48px;
+}
+
+.p-price-refund {
+   // display: none;
+}
+
+
+.p-price_button {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    margin: auto;
+    @include mq-up(lg)  {
+          bottom: 80px;
+    }
+}

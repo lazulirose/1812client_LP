@@ -1,0 +1,107 @@
+
+
+#confirm,
+#thanks {
+    .p-entryform_text {
+        margin-bottom: 40px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.8;
+        @include mq-up(lg) {
+            margin: 50px 0 65px;
+            font-size: 18px;
+        }
+    }
+    .element_wrap input,
+    .element_wrap textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        background-color: #eee;
+        border: none;
+        resize: none;
+        @include mq-up(lg) {
+            margin-bottom: 20px;
+        }
+    }
+    .element_wrap {
+        label {
+            margin-bottom: 15px;
+            font-weight: 500;
+            @include mq-up(lg) {
+                margin-bottom: 10px;
+                font-size: 13px;
+            }
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            height: 38px;
+            padding: 0 20px;
+            box-sizing: border-box;
+            @include mq-up(lg) {
+                height: 65px;
+            }
+        }
+        textarea {
+            height: 130px;
+            padding: 20px;
+            box-sizing: border-box;
+            @include mq-up(lg) {
+                margin-bottom: 30px;
+            }
+        }
+        p {
+            width: 95%;
+            padding: 30px 0 60px;
+            margin: auto;
+            font-weight: bold;
+        }
+    }
+}
+
+
+/*****-------------------------------
+    Confirm and thanks Style
+-------------------------------*****/
+
+#confirm,
+#thanks {
+    background-color: $sub-color;
+    .l-header {
+        text-align: center;
+    }
+    .c-sectiontitel-sub {
+        padding-top: 45px;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        color: $main;
+    }
+    form+a {
+        display: block;
+        margin-top: 24px;
+    }
+}
+
+#confirm .p-entryform,
+#thanks .p-entryform {
+    width: 80%;
+}
+
+#thanks .p-entryform_text+p {
+    margin-bottom: 60px;
+    text-align: center;
+    line-height: 2;
+}
+
+#confirm button,
+#thanks button {
+    position: relative;
+    width: 100%;
+    max-width: 816px;
+    margin: auto;
+    text-align: center;
+    background-color: $sub-color;
+    border-radius: 3px;
+}

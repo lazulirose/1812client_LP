@@ -1,7 +1,148 @@
 /*****-------------------------------
-    JavaScript interactions
+    Header
 -------------------------------*****/
 
+.header-scrolled {
+    position: fixed !important;
+    transition: .3s;
+    @media screen and (min-width: 770px) {
+        .menu_entry::before, .menu_entry::after {
+            display: none;
+        }
+    }
+}
+
+.p-keyviasual {
+    -webkit-animation: keyviasual 7s;
+    animation: keyviasual 7s;
+}
+
+.p-tagline-en, .p-tagline-jp {
+     -webkit-animation: text-tag 7s;
+    animation: text-tag 7s;
+}
+/*****-------------------------------
+    Toggle
+-------------------------------*****/
+.c-nav_toggle {
+    position: fixed;
+    z-index: 999999;
+    button {
+        background-color: transparent;
+    }
+    img {
+        position: absolute;
+        top: -50px;
+        left: 20px;
+        display: none;
+    }
+    @include mq-up(lg) {
+        display: none;
+        transition: .8s;
+    }
+}
+
+#is-open {
+    display: block;
+    @media screen and (max-width: 770px) {
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+        display: none;
+        width: 100vw;
+        height: 100vh;
+        padding-top: 25%;
+        text-align: center;
+        background-color: rgba(#fff, .9);
+    }
+}
+.menu__button {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    display: block;
+    width: 90px;
+    height: 44px;
+}
+
+.open-anime.c-nav_toggle::before {
+    animation: menu-bar01 .75s forwards;
+}
+
+.open-anime {
+    .c-menu {
+        animation: test .8s;
+    }
+}
+
+.open-anime.c-nav_toggle {
+    transition: .8s;
+}
+
+.c-menu {
+    transform: translateX(0);
+}
+
+.close-anime .c-menu {
+    animation: test .8s;
+}
+
+.close-anime.c-nav_toggle {
+    transition: .8s;
+    & img {
+        display: block;
+        background-color: transparent;
+    }
+    span {
+        display: none;
+    }
+}
+/*****-------------------------------
+    Scroll
+-------------------------------*****/
+.motion-txt {
+    display: inherit;
+    position: relative;
+    overflow: hidden;
+}
+
+.motion-txt:after {
+    content: '';
+    position: absolute;
+    z-index: 999999999999999999999;
+    opacity: 1;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    transform: translate3d(-101%, 0, 0);
+}
+
+.js-scroll.show .motion-txt:after {
+    transition-property: transform, opacity;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transform: translate3d(0, 0, 0);
+}
+
+.js-scroll.done .motion-txt:after {
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transform: translate3d(103%, 0, 0);
+}
+
+.motion-txt .motion-inner {
+    display: inline-block;
+    opacity: 0;
+}
+
+.js-scroll.done .motion-txt .motion-inner {
+    opacity: 1;
+}
 
 /*****-------------------------------
     Loading style
@@ -64,141 +205,12 @@
     }
 }
 
-.c-nav_toggle {
-    position: fixed;
-    z-index: 999999;
-    button {
-        background-color: transparent;
-    }
-    img {
-        position: absolute;
-        top: -50px;
-        left: 20px;
-        display: none;
-    }
-    @include mq-up(lg) {
-        display: none;
-        transition: .8s;
-    }
-}
-
-#is-open {
-    display: block;
-    @media screen and (max-width: 770px) {
-        position: fixed;
-        top: 0;
-        z-index: 9999;
-        display: none;
-        width: 100vw;
-        height: 100vh;
-        padding-top: 25%;
-        text-align: center;
-        background-color: rgba(#fff, .9);
-    }
-}
-
-.header-scrolled {
-    position: fixed !important;
-    transition: .3s;
-    @media screen and (min-width: 770px) {
-        .menu_entry::before, .menu_entry::after {
-            display: none;
-        }
-    }
-}
-
-.menu__button {
-    position: absolute;
-    top: -20px;
-    right: 0;
-    display: block;
-    width: 90px;
-    height: 44px;
-}
-
 
 /*****-------------------------------
-    menu-bar01 is before
-    menu-bar02 is .c-nav__toggle
-    menu-bar03 is after
+    menu
 -------------------------------*****/
 
-.open-anime.c-nav_toggle::before {
-    animation: menu-bar01 .75s forwards;
-}
 
-.open-anime {
-    .c-menu {
-        animation: test .8s;
-    }
-}
-
-.open-anime.c-nav_toggle {
-    transition: .8s;
-}
-
-.c-menu {
-    transform: translateX(0);
-}
-
-.close-anime .c-menu {
-    animation: test .8s;
-}
-
-.close-anime.c-nav_toggle {
-    transition: .8s;
-    & img {
-        display: block;
-        background-color: transparent;
-    }
-    span {
-        display: none;
-    }
-}
-
-.motion-txt {
-    display: inherit;
-    position: relative;
-    overflow: hidden;
-}
-
-.motion-txt:after {
-    content: '';
-    position: absolute;
-    z-index: 999999999999999999999;
-    opacity: 1;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #000;
-    transform: translate3d(-101%, 0, 0);
-}
-
-.js-scroll.show .motion-txt:after {
-    transition-property: transform, opacity;
-    transition-duration: 0.5s;
-    transition-delay: 0s;
-    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-    transform: translate3d(0, 0, 0);
-}
-
-.js-scroll.done .motion-txt:after {
-    transition-property: transform;
-    transition-duration: 0.5s;
-    transition-delay: 0s;
-    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-    transform: translate3d(103%, 0, 0);
-}
-
-.motion-txt .motion-inner {
-    display: inline-block;
-    opacity: 0;
-}
-
-.js-scroll.done .motion-txt .motion-inner {
-    opacity: 1;
-}
 
 
 /*****-------------------------------
@@ -250,9 +262,9 @@
 }
 
 
-/* --- show text --- */
+/* --- show keyviasual --- */
 
-@keyframes text {
+@keyframes keyviasual {
     0% {
         transform: translateY(25px);
         opacity: 0;
@@ -260,11 +272,24 @@
     80% {
         transform: translateY(25px);
         opacity: 0;
-        text-shadow: 1px 1px 1px #fff;
+
     }
     100% {
         transform: translateY(0);
         opacity: 1;
-        text-shadow: none;
+    }
+}
+@keyframes text-tag {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    80% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
     }
 }

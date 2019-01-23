@@ -1,0 +1,97 @@
+
+.l-fotter {
+    display: block;
+    width: 100%;
+    padding: 24px 5%;
+    background-color: $main;
+    @include mq-up(md) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.p-fotter_sns {
+    display: block;
+    width: 100%;
+    margin: auto;
+    padding: 24px 15px 24px 0;
+    text-align: center;
+    @include mq-up(md) {
+        width: 50%;
+    }
+}
+
+.p-fotter_sns_icon {
+    display: inline;
+    width: 100%;
+    svg {
+        display: inline;
+        width: 35px;
+        margin-left: 15px;
+        vertical-align: middle;
+    }
+    @include mq-up(md) {}
+}
+
+.p-fotter_target {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    background-color: #fff;
+    text-align: center;
+    img {
+        width: 100%;
+        max-width: 260px;
+        text-align: center;
+    }
+    @include mq-up(md) {
+        width: 50%;
+    }
+}
+
+.p-fotter_target_link {}
+
+.p-fotter_gototop {
+    display: block;
+    padding: 24px 0;
+    a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        img {
+            display: inline;
+            width: 50px;
+        }
+    }
+    @include mq-up(md) {
+        img {
+            text-align: center;
+            width: 50px;
+        }
+    }
+}
+
+.p-fotter_gototop_link {}
+
+.copyright {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+    color: #fff;
+}
+
+.p-entryform {
+    position: relative;
+    padding: 30px 20px;
+    margin: 45px auto;
+    background-color: #fff;
+    @include mq-up(lg) {
+        width: 100%;
+        max-width: 1020px;
+        padding: 30px 40px;
+        margin: 80px auto 45px;
+    }
+}

@@ -1,0 +1,151 @@
+
+.l-header {
+    position: absolute;
+    z-index: 99999999;
+    width: 100%;
+    @media screen and (min-width: 770px) {
+        position: relative;
+        padding: 0 2.5%;
+        background-color: #fff;
+    }
+}
+
+
+.c-nav {
+    position: relative;
+    @media screen and (min-width: 770px) {
+        max-width: 2000px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.c-nav_logo {
+    height: 70px;
+    @media screen and (min-width: 770px) {
+        width: 100%;
+        max-width: 270px;
+    }
+}
+
+.logo {
+    height: 70px;
+    padding: 10px;
+}
+
+.c-nav_toggle {}
+
+.menu_tag {
+    position: fixed;
+    right: -14px;
+    top: 35%;
+    height: 40px;
+    padding: 8px;
+    transform: rotate(-90deg);
+    background-color: rgba(#fff, .6);
+    border-radius: 2px 2px 0 0;
+    font-weight: bold;
+    font-family: minerva-modern, sans-serif;
+    font-size: 18px;
+    @media screen and (min-width: 770px) {
+        display: none;
+    }
+}
+
+.menu_button {}
+
+
+/*============================
+#is-open.c-menu
+============================*/
+
+.c-menu {
+    position: relative;
+    @media screen and (min-width: 770px) {
+        width: 100%;
+        padding: 0;
+        max-width: 1280px;
+    }
+}
+
+.c-menu_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    @media screen and (min-width: 770px) {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+    }
+    li {
+        position: relative;
+        padding: 24px;
+        @media screen and (min-width: 770px) {
+            padding: 0px 8px;
+        }
+    }
+}
+
+.menu_link {
+    font-weight: bold;
+    color: $main-font;
+    font-size: 16px;
+    @media screen and (min-width: 1080px) {
+        font-size: 20px;
+    }
+}
+
+.menu_entry {
+    position: absolute;
+    left: -120px;
+    @media screen and (min-width: 770px) {
+        position: relative;
+        top: 4px;
+        left: inherit;
+    }
+    &::before {
+        content: "APPLICATION&CONTACT";
+        position: absolute;
+        bottom: 30px;
+        right: -220px;
+        z-index: -1;
+        display: block;
+        width: 220px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid $primary;
+        @extend .menu_link;
+        @media screen and (min-width: 770px) {
+            bottom: -130px;
+            right: -109px;
+            width: 250px;
+            text-align: right;
+            font-size: 20px;
+            transform: rotate(90deg);
+        }
+    }
+    &::after {
+        content: "お申込み＆お問い合わせ";
+        position: absolute;
+        left: 40px;
+        bottom: 3px;
+        display: block;
+        width: 250px;
+        text-align: center;
+        letter-spacing: 2px;
+        font-weight: bold;
+        color: $main-font;
+        @media screen and (min-width: 770px) {
+            width: inherit;
+            height: 250px;
+            right: 45px;
+            bottom: -250px;
+            display: block;
+            writing-mode: vertical-rl;
+            letter-spacing: 5.5px;
+        }
+    }
+}

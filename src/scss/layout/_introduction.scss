@@ -1,0 +1,98 @@
+
+.l-introduction {
+    position: relative;
+    z-index: auto;
+    padding: 230px 5% 0;
+    background-color: rgba(#fff, .8);
+    @include mq-up(md) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 160px;
+    }
+    @include mq-up(lg) {
+        position: relative;
+        padding-left: 15%;
+        padding-top: 160px;
+        background: linear-gradient(90deg, rgba(#fff, 0) 0%, rgba(#fff, 0) 10%, rgba(#fff, .8) 10%, rgba(#fff, .8) 100%);
+    }
+    @media screen and (min-width: 1280px) {
+        padding-top: 200px;
+    }
+}
+
+.p-introduction-first {
+    position: relative;
+    z-index: auto;
+    max-width: 480px;
+    margin: 0 auto 40px;
+    letter-spacing: 2.5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: $main;
+    strong {
+        display: inline-block;
+        margin-bottom: -4px;
+        font-size: 32px;
+    }
+    em {
+        line-height: 2.5;
+        background-image: linear-gradient(transparent 60%, $sub-color 40%);
+    }
+    @include mq-up(md) {
+        text-align: left;
+        width: 50%;
+        font-size: 24px;
+    }
+    @include mq-up(lg) {
+        width: 60%;
+        strong {
+            font-size: 40px;
+        }
+    }
+    //    &::after {
+    //        content: "";
+    //        display: block;
+    //        position: absolute;
+    //        bottom: 36px;
+    //        z-index: -1;
+    //        width: 315px;
+    //        height: 12px;
+    //        background-color: $sub-color;
+    //    }
+}
+
+.p-introduction-second {
+    position: relative;
+    z-index: auto;
+    max-width: 480px;
+    margin: auto;
+    padding-bottom: 60px;
+    font-size: 100%;
+    @include text;
+    //@include text-shadow;
+    color: $main;
+    @include mq-up(md) {
+        width: 40%;
+    }
+    @include mq-up(lg) {
+        width: 40%;
+        font-size: 18px;
+    }
+    &::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        z-index: -1;
+        top: -70px;
+        left: 10px;
+        width: 120px;
+        height: 120px;
+        transform: rotate(-15deg);
+        background: url(./../../../images/philippines.png) no-repeat;
+        background-size: contain;
+        vertical-align: middle;
+        opacity: .45;
+    }
+}

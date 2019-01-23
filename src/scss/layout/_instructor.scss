@@ -1,0 +1,193 @@
+
+/*============================
+#instructor.l-instructor
+============================*/
+
+.l-instructor {
+    position: relative;
+    top: 1100px;
+    padding-bottom: 470px;
+    background-color: $sub-color;
+    @include mq-up(lg) {
+        top: 0;
+        padding: 0;
+        margin: -25px 0 -590px;
+        background-color: #fff;
+    }
+}
+
+.p-instructor_texttag {
+    max-width: 480px;
+    margin: 24px auto;
+    padding: 0 5%;
+    text-align: right;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(#fff, .6);
+    font-size: 18px;
+    color: $main;
+    @include mq-up(lg) {
+        position: relative;
+        top: 180px;
+        right: 10px;
+        max-width: 1032px;
+        padding: 0;
+        font-size: 32px;
+    }
+    br.sp-only {
+        @media screen and (min-width: 420px) {
+            display: none;
+        }
+    }
+}
+
+.p-instructor-yumi {
+    position: relative;
+    z-index: auto;
+    max-width: 480px;
+    margin: 0 auto 24px;
+    @include mq-up(lg) {
+        top: -200px;
+        left: -30px;
+        max-width: 1032px;
+    }
+}
+
+.p-instructor_image-yumi {
+    position: relative;
+    z-index: 9999;
+    width: 320px;
+    @include mq-up(lg) {
+        position: relative;
+        top: 420px;
+        right: -650px;
+        width: 400px;
+    }
+}
+
+.p-about_description-yumi {
+    padding: 0 5%;
+    @include mq-up(lg) {
+        width: 820px;
+        height: 850px;
+        background-color: rgba($sub-color, .35);
+    }
+}
+
+.p-instructor_yumi {
+    z-index: 9999;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 40px;
+    color: $accent;
+    @include mq-up(lg) {
+        position: relative;
+        top: 60px;
+        left: -180px;
+        text-align: right;
+        font-size: 80px;
+        &+.p-instructor_position {
+            position: relative;
+            top: 55px;
+            left: -180px;
+            text-align: right;
+            &+.p-about_instructor_description {
+                position: relative;
+                right: -40px;
+                bottom: -60px;
+            }
+        }
+    }
+}
+
+.p-instructor_position {
+    position: relative;
+    z-index: 9999;
+    margin-bottom: 24px;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: 1px 1px 3px rgba(#fff, .6);
+    color: $main;
+    span {
+        display: block;
+        letter-spacing: 1px;
+        @include mq-up(lg) {
+            font-size: 16px;
+        }
+    }
+    @include mq-up(lg) {
+        text-shadow: none;
+        font-size: 32px;
+    }
+}
+
+.p-about_instructor_description {
+    position: relative;
+    z-index: 9999;
+    padding: 24px;
+    background-color: rgba(#fff, .8);
+    @include text;
+    @include mq-up(lg) {
+        width: 500px;
+        padding: 0;
+        text-shadow: 1px 1px 3px rgba(#fff, .4);
+        background-color: transparent;
+    }
+}
+
+.p-instructor-scott {
+    position: relative;
+    z-index: auto;
+    max-width: 480px;
+    margin: auto;
+    @include mq-up(lg) {
+        top: -1180px;
+        right: -232px;
+        max-width: 1032px;
+    }
+}
+
+.p-instructor_image-scott {
+    position: absolute;
+    z-index: 9999;
+    right: 0;
+    width: 320px;
+    @include mq-up(lg) {
+        left: -220px;
+        bottom: -370px;
+        width: 400px;
+    }
+}
+
+.p-about_description-scott {
+    position: relative;
+    top: 420px;
+    padding: 0 5%;
+    @include mq-up(lg) {
+        top: 475px;
+        width: 820px;
+        height: 950px;
+        background-color: rgba($sub-color, .35);
+    }
+}
+
+.p-instructor_scott {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 40px;
+    color: $accent;
+    @include mq-up(lg) {
+        position: relative;
+        top: 325px;
+        left: 210px;
+        font-size: 80px;
+        &+.p-instructor_position {
+            top: 320px;
+            right: -210px;
+            &+.p-about_instructor_description {
+                top: 320px;
+                left: 210px;
+            }
+        }
+    }
+}
+

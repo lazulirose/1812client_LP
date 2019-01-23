@@ -1,0 +1,206 @@
+/*============================
+#form.l-form
+============================*/
+
+.l-form {
+    position: relative;
+    z-index: auto;
+    padding-bottom: 40px;
+    background-color: rgba(#fff, .4);
+     form {
+        @include mq-up(lg) {
+            width: 824px;
+            margin: auto
+        }
+    }
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        //TODO
+        top: -20%;
+        left: -10%;
+        //z-index: -1;
+        display: block;
+        width: 120%;
+        height: 200%;
+        //background-image: url(./../../../images/form_bg-sp.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        @media screen and (min-width: 470px) {
+            top: -25%;
+        }
+        @media screen and (min-width: 590px) {
+            top: -30%;
+        }
+        @media screen and (min-width: 730px) {
+            top: -35%;
+            //background-image: url(./../../../images/form_bg-pc.svg);
+        }
+        @media screen and (min-width: 1200px) {
+            background-image: url(none);
+        }
+    }
+}
+
+.p-from_title {
+    width: 100%;
+    padding: 5%;
+    margin: 0 auto;
+    background-color: #fff;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    font-weight: bold;
+    @include mq-up(sm) {
+        width: 90%;
+    }
+    @include mq-up(lg) {
+        max-width: 1180px;
+        font-size: 24px;
+    }
+    strong {
+        display: inline-block;
+        margin-bottom: 8px;
+        font-size: 24px;
+        background-image: linear-gradient(transparent 80%, #F2EE8C 80%);
+        @include mq-up(lg) {
+            font-size: 40px;
+            background-image: linear-gradient(transparent 75%, #F2EE8C 75%);
+        }
+    }
+}
+
+.p-form {
+    position: relative;
+    z-index: 9999;
+    width: 100%;
+    padding: 0 5% 40px;
+    margin: auto;
+    background-color: #fff;
+    @include mq-up(sm) {
+        width: 90%;
+    }
+    @include mq-up(lg) {
+        max-width: 1180px;
+    }
+}
+
+.element_wrap {
+    display: block;
+    width: 100%;
+    margin: 0 auto 16px;
+    &:nth-child(1) {
+        height: 18px;
+        margin-bottom: 40px;
+        @include mq-up(lg) {
+            margin-bottom: 50px;
+        }
+    }
+}
+
+input,
+textarea {
+    max-width: 840px;
+    display: inline-block;
+    background-color: #E5E5E5;
+    border-radius: 3px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 96%;
+    height: 40px;
+    padding: 1% 2%;
+    margin: 16px auto 0;
+}
+
+textarea {
+    width: 94%;
+    height: 160px;
+    padding: 3%;
+    margin-top: 16px;
+}
+
+label {
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+input[type=radio] {
+    &+label {
+        display: inline-block;
+        padding-left: 40px;
+        position: relative;
+        cursor: pointer;
+    }
+}
+
+input[type=radio]+label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-top: -9px;
+    background-color: #E5E5E5;
+    border-radius: 3px;
+}
+
+input[type=radio]:checked+label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: block;
+}
+
+input[type=radio]:checked+label::after {
+    left: 2px;
+    top: 12px;
+    width: 15px;
+    height: 8px;
+    margin-top: -8px;
+    border-left: 3px solid $main;
+    border-bottom: 3px solid $main;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+label+input[type=radio] {
+    padding-right: 40px;
+}
+
+.p-from_button {
+    display: block;
+    width: 99%;
+    max-width: 464px;
+    height: 50px;
+    padding-left: 1%;
+    margin: 30px auto 0;
+    box-sizing: border-box;
+    background-color: $main;
+    font-weight: bold;
+    letter-spacing: 8px;
+    color: #fff;
+    @include mq-up(lg) {
+        max-width: inherit;
+        width: 816px;
+        height: 80px;
+        margin: 30px auto 0;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+
+.c-bach {
+    display: inline-block;
+    padding: 5px;
+    margin-left: 8px;
+    background-color: $sub-color;
+    vertical-align: middle;
+    font-size: 11px;
+}
