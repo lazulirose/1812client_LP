@@ -1,7 +1,15 @@
 .l-sales {
-    position: relative;
+   position: relative;
+    bottom: -980px;
     background-color: #fff;
+     @media screen and (min-width: 480px) {
+            bottom: -940px
+    }
+    @include mq-up(md) {
+        bottom: -970px;
+    }
     @include mq-up(lg) {
+        bottom: inherit;
         padding-bottom: 440px;
         margin-bottom: -30px;
     }
@@ -16,8 +24,15 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -20px;
+    bottom: -80px;
     @include mq-up(lg) {
             bottom: 230px;
     }
+}
+@media screen and (max-width: 360px) {
+    .l-sales{
+            
+        bottom: -1000px;
+    }
+    
 }
