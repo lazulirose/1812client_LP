@@ -25,6 +25,17 @@
 
 /*****-------------------------------
 
+    Component setting
+
+-------------------------------*****/
+
+@import "object/component/btn";
+//@import "object/component/nav";
+@import "object/component/text";
+//@import "object/component/card";
+
+/*****-------------------------------
+
     Layout setting
 
 -------------------------------*****/
@@ -43,16 +54,7 @@
 @import "layout/fotter";
 @import "layout/php";
 
-/*****-------------------------------
 
-    Component setting
-
--------------------------------*****/
-
-@import "object/component/btn";
-//@import "object/component/nav";
-@import "object/component/text";
-//@import "object/component/card";
 
 /*****-------------------------------
 
