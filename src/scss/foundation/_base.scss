@@ -17,7 +17,7 @@ body {
     color: $main-font;
     font-size: 14px;
     -webkit-text-size-adjust: 100%;
-    background: $main url(./../../../images/bg-1.jpg) no-repeat center center;
+    background: $main url(./../images/bg-1.jpg) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     @include mq-up(lg) {
@@ -28,11 +28,14 @@ body {
 main {
     position: relative;
     display: block;
-    overflow: hidden;
 }
 
 a {
     text-decoration: none;
+    transition: .3s;
+    &:hover {
+        opacity: .8;
+    }
 }
 
 video {

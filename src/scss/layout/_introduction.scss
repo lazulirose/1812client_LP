@@ -80,19 +80,19 @@
         width: 40%;
         font-size: 18px;
     }
-    &::before {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        z-index: -1;
-        top: -70px;
-        left: 10px;
-        width: 120px;
-        height: 120px;
-        transform: rotate(-15deg);
-        background: url(./../../../images/philippines.png) no-repeat;
-        background-size: contain;
-        vertical-align: middle;
-        opacity: .45;
-    }
+//    &::before {
+//        content: "";
+//        display: inline-block;
+//        position: absolute;
+//        z-index: -1;
+//        top: -70px;
+//        left: 10px;
+//        width: 120px;
+//        height: 120px;
+//        transform: rotate(-15deg);
+//        background: url(./../images/philippines.png) no-repeat;
+//        background-size: contain;
+//        vertical-align: middle;
+//        opacity: .45;
+//    }
 }

@@ -48,12 +48,15 @@
     }
     @include mq-up(md) {
         width: 50%;
+        max-width: 320px;
+        margin: auto;
     }
 }
 
 .p-fotter_target_link {}
 
 .p-fotter_gototop {
+        width: 100%;
     display: block;
     padding: 24px 0;
     a {
@@ -78,6 +81,7 @@
 .copyright {
     display: block;
     width: 100%;
+    margin-top: 24px;
     text-align: center;
     font-size: 11px;
     color: #fff;

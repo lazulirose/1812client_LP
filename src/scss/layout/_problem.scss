@@ -16,7 +16,7 @@
     color: $main;
     @include mq-up(lg) {
         position: relative;
-        padding: 340px 0 160px 20%;
+        padding: 380px 0 160px 25%;
         background: linear-gradient(90deg, rgba(#fff, 0) 0%, rgba(#fff, 0) 10%, rgba(#fff, .8) 10%, rgba(#fff, .8) 100%);
     }
 }

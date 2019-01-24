@@ -3,9 +3,10 @@ mb_language('ja');
 mb_internal_encoding("UTF-8");
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        //$test = $_POST["q"];
         $name = $_POST["name"];
         $email = $_POST["email"];
-        $occupation = $_POST["occupation"];
+        $occupation = $_POST["text"];
         $contact  = $_POST["contact"];
     }
 
@@ -27,9 +28,10 @@ mb_internal_encoding("UTF-8");
 	// 申し込み者用本文
 	$auto_reply_text = "この度は、お問い合わせ頂き誠にありがとうございます。下記の内容でお問い合わせを受け付けました。\n\n";
 	$auto_reply_text .= "お問い合わせ日時：" . date("Y-m-d H:i") . "\n";
+    //$auto_reply_text .= "ご用件：" . $_POST['q'] . "\n";
 	$auto_reply_text .= "氏名：" . $_POST['name'] . "\n";
 	$auto_reply_text .= "メールアドレス：" . $_POST['email'] . "\n\n";
-	$auto_reply_text .= "ご職業：" . $_POST['occupation'] . "\n\n";
+	$auto_reply_text .= "ご職業：" . $_POST['text'] . "\n\n";
 
 	$auto_reply_text .= "お問い合わせ内容：" . nl2br($_POST['contact']) . "\n\n";
 	$auto_reply_text .= "Four Word English Studio";
@@ -41,11 +43,12 @@ mb_internal_encoding("UTF-8");
 
 	// 運営用本文
 	$admin_reply_text = "下記の内容でお問い合わせがありました。\n\n";
+    //$admin_reply_text .= "ご用件：" . $_POST['q'] . "\n";
 	$admin_reply_text .= "お問い合わせ日時：" . date("Y-m-d H:i") . "\n";
 	$admin_reply_text .= "氏名：" . $_POST['name'] . "\n";
 	$admin_reply_text .= "メールアドレス：" . $_POST['email'] . "\n\n";
-    $auto_reply_text .= "ご職業：" . $_POST['occupation'] . "\n\n";
-
+    $admin_reply_text .= "ご職業：" . $_POST['text'] . "\n\n";
+        
 	$admin_reply_text .= "お問い合わせ内容：" . nl2br($_POST['contact']) . "\n\n";
 	mb_send_mail( 'info@4word-english.com', $admin_reply_subject, $admin_reply_text, $header);
 
@@ -67,7 +70,7 @@ mb_internal_encoding("UTF-8");
 <body>
     <div id="confirm">
         <header class="l-header">
-            <a href="#index">
+            <a href="index.php">
                 <img src="./images/logo.png" alt="FOUR WORD English Studio logo" class="logo">
             </a>
         </header>
@@ -80,36 +83,36 @@ mb_internal_encoding("UTF-8");
                     <form method="post" action="confirm.php">
                         <input type="hidden" name="name" value="<?php echo $name; ?>">
                         <input type="hidden" name="email" value="<?php echo $email; ?>">
-                        <input type="hidden" name="tel" value="<?php echo $tel; ?>">
+                        <input type="hidden" name="text" value="<?php echo $occupation; ?>">
                         <input type="hidden" name="contact" value="<?php echo $contact; ?>">
-                        <div class="element_wrap">
+                           <div class="element_wrap">
                             <label>お名前<span class="c-bach">必須</span></label>
                             <p>
-                                <?php echo $name; ?>test
+                                <?php echo $name; ?>
                             </p>
                         </div>
                         <div class="element_wrap">
                             <label>メールアドレス<span class="c-bach">必須</span></label>
                             <p>
-                                <?php echo $email; ?>test
+                                <?php echo $email; ?>
                             </p>
                         </div>
                         <div class="element_wrap">
-                            <label>電話番号<span class="c-bach">必須</span></label>
+                            <label>ご職業<span class="c-bach">必須</span></label>
                             <p>
-                                <?php echo $tel; ?>test
+                                <?php echo $occupation; ?>
                             </p>
                         </div>
                         <div class="element_wrap">
                             <label>お問い合わせ内容</label>
                             <p>
-                                <?php echo $contact; ?>test
+                                <?php echo $contact; ?>
                             </p>
                         </div>
-                        <input class="p-from_button" type="submit" name="btn_confirm" value="送信">
+                        <input class="p-from_button" type="submit" name="submit" value="送信">
                     </form>
-                     <a href="index.html#form">
-                        <button class="p-from_button" type="button">戻る</button>
+                     <a href="index.php#index">
+                        <button class="p-from_button" type="button">入力を取りやめる</button>
                     </a>
                 </div>
             </div>

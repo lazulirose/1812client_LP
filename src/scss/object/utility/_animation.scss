@@ -109,13 +109,13 @@
 .motion-txt:after {
     content: '';
     position: absolute;
-    z-index: 999999999999999999999;
+    z-index: 9999999999999;
     opacity: 1;
     left: 0;
     top: 0;
     bottom: 0;
     width: 100%;
-    background-color: #000;
+    background-color: $blue;
     transform: translate3d(-101%, 0, 0);
 }
 

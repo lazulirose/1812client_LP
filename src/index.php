@@ -5,15 +5,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="FOUR WORD English Studio">
-    <meta name="keywords" content="FOUR WORD English Studio">
+    <meta name="description" content="Four Word English Studio">
+    <meta name="keywords" content="Four Word English Studio">
     <meta name="author" content="">
-    <meta property="og:title" content="FOUR WORD English Studio">
+    <meta property="og:title" content="Four Word English Studio">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://#{metas.url}">
     <meta property="og:image" content="http://#{metas.image}/og_image.png">
-    <meta property="og:site_name" content="FOUR WORD English Studio">
-    <meta property="og:description" content="FOUR WORD English Studio">
+    <meta property="og:site_name" content="Four Word English Studio">
+    <meta property="og:description" content="Four Word English Studio">
     <meta property="fb:app_id" content="任意のID">
     <meta property="twitter:card" content="任意のID">
     <meta property="twitter:creator" content="@">
@@ -44,7 +44,7 @@
             <nav class="c-nav">
                 <h1 class="c-nav_logo">
                     <a href="#index">
-                        <img src="./images/logo.png" alt="FOUR WORD English Studio logo" class="logo">
+                        <img src="./images/logo.png" alt="Four Word English Studio logo" class="logo">
                     </a>
                 </h1>
                 <div class="c-nav_toggle" id="is-menuclose">
@@ -161,10 +161,10 @@
             <div class="l-solution" id="solution">
                 <div class="c-titel js-scroll">
                     <h2 class="motion-txt">OUR SOLUTIONS</h2>
-                    <h3 class="motion-txt">FOUR WORD English Studioの解決方法</h3>
+                    <h3 class="motion-txt">Four Word English Studioの解決方法</h3>
                 </div>
-                <div class="p-solution_container js-scroll">
-                    <div class="motion-txt">
+                <div class="p-solution_container">
+                    <div class="fadein">
                         <div class="p-solution_content">
                             <img src="./images/solution-1.png" alt="" class="p-solution_content_image fadein">
                             <p class="p-solution_content_text fadein">金曜日は振返りや授業外学習<br>スピーチ・課題発表・テスト</p>
@@ -173,7 +173,7 @@
                             </p>
                             <div class="p-solution_content_body">
                                 <h2 class="p-solution_content_body_title fadein">短時間授業でしっかり集中</h2>
-                                <p class="p-solution_content_body_text fadein">英語学校では授業数に応じて値段が変わるのが一般的ですが、実際は授業数が英語力に直結するわけではありません。<br><br>FOUR WORD English Studioでは、時間の使い方を考え抜いたカリキュラムによって短時間で効果的な勉強を可能にしました。<br><br>授業は基礎からしっかり行い、決して楽ではありませんが、あなたに合った効果的な授業数を提供するためコース選びに迷う必要がありません。</p>
+                                <p class="p-solution_content_body_text fadein">英語学校では授業数に応じて値段が変わるのが一般的ですが、実際は授業数が英語力に直結するわけではありません。<br><br>Four Word English Studioでは、時間の使い方を考え抜いたカリキュラムによって短時間で効果的な勉強を可能にしました。<br><br>授業は基礎からしっかり行い、決して楽ではありませんが、あなたに合った効果的な授業数を提供するためコース選びに迷う必要がありません。</p>
                             </div>
                         </div>
                         <div class="p-solution_content">
@@ -197,7 +197,7 @@
                             <p class="p-solution_content_tag"><span># 勉強方法に困らない</span><span># 相談相手の居る学校</span><span># 第二言語習得論</span><br><span># 科学的に証明された勉強法</span><span># 日本人英語教師</span></p>
                             <div class="p-solution_content_body">
                                 <h2 class="p-solution_content_body_title fadein">プロフェッショナルが<br>学習サポートを担当</h2>
-                                <p class="p-solution_content_body_text fadein">FOUR WORD English Studioでは、英語講師の経験を持つ第二言語習得論学習者が学習サポートも行っています。<br><br> 彼らは英語力が高いだけではありません。プロの翻訳家としも活躍し、VIPへの直接指導も行ってきた経験豊富なプロフェッショナルたちが直接あなたの学習相談を行い、学習のサポートを担当しています。
+                                <p class="p-solution_content_body_text fadein">Four Word English Studioでは、英語講師の経験を持つ第二言語習得論学習者が学習サポートも行っています。<br><br> 彼らは英語力が高いだけではありません。プロの翻訳家としも活躍し、VIPへの直接指導も行ってきた経験豊富なプロフェッショナルたちが直接あなたの学習相談を行い、学習のサポートを担当しています。
                                     <br><br> 専門の知識を持たない場合、手探りに勉強方法を試して基調な留学滞在中の時間使ってしまうこともあります。しかし、プロフェッショナルがサポートすることによって１人１人に合ったベストな学習方法を学習を始める最初の段階から提案することができます。
                                 </p>
 
@@ -224,31 +224,31 @@
             <div class="l-about" id="about">
                 <div class="c-titel js-scroll">
                     <h2 class="motion-txt">ABOUT US</h2>
-                    <h3 class="motion-txt">FOUR WORD English Studioができること</h3>
+                    <h3 class="motion-txt">Four Word English Studioができること</h3>
                 </div>
-                <div class="p-about_container js-scroll">
-                    <h1 class="p-about_container_texttag">
+                <div class="p-about_container">
+                    <h1 class="p-about_container_texttag fadein">
                         ストイック✕自由<br>第二言語習得論
                     </h1>
-                    <div class="motion-txt">
+                    <div class="fadein">
                         <img src="./images/about-1.png" alt="" class="p-about_container_image">
                     </div>
                 </div>
                 <div class="p-about_description">
                     <h2 class="p-about_description_highlight fadein">スパルタ校とは違います</h2>
-                    <p class="p-about_description_highlight fadein"><em>FOUR WORD English Studioはスパルタ校ではありません。</em><br><em>ただ単に厳しくするのではなく第二言語習得論を元に設計された効率を重視した「ストイックさ」と「自由さ」を備えた学校です。</em>
+                    <p class="p-about_description_highlight fadein"><em>Four Word English Studioはスパルタ校ではありません。</em><br><em>ただ単に厳しくするのではなく第二言語習得論を元に設計された効率を重視した「ストイックさ」と「自由さ」を備えた学校です。</em>
                     </p>
                     <p class="p-about_description_text fadein">初級者が短期間で次のステップへ進めるようにと考えられたカリキュラムを採用しています。3ヶ月間、カリュキュラムに沿った学習を行った後はスムースに中上級のステップ進むことができるようになります。<br><br>
-                        <strong class="p-about_description_text_next fadein">次のステップも<br class="sp-only">サポートします</strong><br><br>FOUR　WORD English Studioでは、キャンパス内にフィリピン＆オーストラリア専門留学エージェントを備え、その他オーストラリア現地にも日本人スタッフ常駐のサポートオフィスを構えています。 卒業後、外国人の学生が多い環境や試験対策のために他校への転校やオーストラリアのワーキングホリデーのサポートも万全です。<br><br>これまで私たちは、語学学校を通して初級者の悩みに触れてきました。 初級者がもっと英語に触れやすい環境を作りたい一心で、初級者が留学するために最適な環境をこだわり抜いて揃えました。
+                        <strong class="p-about_description_text_next fadein">次のステップも<br class="sp-only">サポートします</strong><br><br>Four Word English Studioでは、キャンパス内にフィリピン＆オーストラリア専門留学エージェントを備え、その他オーストラリア現地にも日本人スタッフ常駐のサポートオフィスを構えています。 卒業後、外国人の学生が多い環境や試験対策のために他校への転校やオーストラリアのワーキングホリデーのサポートも万全です。<br><br>これまで私たちは、語学学校を通して初級者の悩みに触れてきました。 初級者がもっと英語に触れやすい環境を作りたい一心で、初級者が留学するために最適な環境をこだわり抜いて揃えました。
                     </p>
                 </div>
-                <div class="p-about_environment js-scroll">
-                    <div class="motion-txt">
-                        <img src="./images/about-2.png" alt="" class="p-about_environment_image-australia fadein">
+                <div class="p-about_environment">
+                    <div class="fadein">
+                        <img src="./images/about-2.png" alt="" class="p-about_environment_image-australia">
                     </div>
                     <h3 class="p-about_environment_highlight-top fadein">こだわり抜いた学習環境</h3>
-                    <div class="motion-txt">
-                        <img src="./images/about-3.png" alt="" class="p-about_environment_image-top fadein">
+                    <div class="fadein">
+                        <img src="./images/about-3.png" alt="" class="p-about_environment_image-top">
                     </div>
                     <img src="./images/about-4.png" alt="" class="p-about_environment_image-right fadein">
                     <img src="./images/about-5.png" alt="" class="p-about_environment_image-left fadein">
@@ -273,8 +273,8 @@
                     <h2 class="motion-txt">INSTRUCTOR</h2>
                     <h3 class="motion-txt">第二言語習得論 講師紹介</h3>
                 </div>
-                <div class="p-instructor_bg js-scroll">
-                    <h3 class="p-instructor_texttag motion-txt">
+                <div class="p-instructor_bg">
+                    <h3 class="p-instructor_texttag fadein">
                         日本人の弱点を知り尽くした<br>Four Word English Studioの<br class="sp-only">日本人スペシャリスト
                     </h3>
                     <div class="p-instructor-yumi">
@@ -328,15 +328,11 @@
                 <div class="l-form fadein" id="form">
                     <h2 class="p-from_title fadein">
                         英語学習の「最初のステップ」となる学校<br>
-                        <strong>FOUR WORD English Studio</strong><br>
+                        <strong>Four Word English Studio</strong><br>
                         <span>お問い合わせ、お申込みはこちらから</span>
                     </h2>
                     <div class="p-form js-scroll">
                         <form action="confirm.php" method="post" name="form" onsubmit="return validate()">
-                            <div class="element_wrap motion-txt">
-                                <input type="radio" name="requirement" checked="checked" id="checkbox-1" value="apply"><label for="checkbox-1">お申し込み</label>
-                                <input type="radio" name="requirement" id="checkbox-2" value="contact"><label for="checkbox-2">お問い合わせ</label>
-                            </div>
                             <div class="element_wrap motion-txt">
                                 <label>氏名<span class="c-bach">必須</span></label>
                                 <input type="text" name="name" value="<?php if( !empty($_POST['name']) ){ echo $_POST['your_name']; } ?>" placeholder="山本太郎" required>
@@ -387,9 +383,9 @@
                 <a href="http://target-english.org/" class="p-fotter_target_link"><img src="./images/target.png" alt="「伸びる」セブ島留学ならTARGET Global English Academy"></a>
             </div>
             <div class="p-fotter_gototop">
-                <a href="#index" class="p-fotter_gototop_link"><img src="./../images/top.png" alt=""></a>
+                <a href="#index" class="p-fotter_gototop_link"><img src="./images/top.png" alt="arrow"></a>
             </div>
-            <small class="copyright">Copyright © TARGET Global English Academy All Rights Reserved.</small>
+            <small class="copyright">Copyright © Four Word English Studio All Rights Reserved.</small>
         </fotter>
     </div>
     <script src="./js/script.js"></script>
@@ -472,7 +468,7 @@
         });
     </script>
     <script>
-        var EffectH = 200;
+        var EffectH = 300;
         $(window).on('scroll load', function() {
             var scTop = $(this).scrollTop();
             var scBottom = scTop + $(this).height();

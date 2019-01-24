@@ -12,7 +12,7 @@
 <body>
     <div id="thanks">
         <header class="l-header">
-            <a href="#index">
+            <a href="index.php#index">
                 <img src="./images/logo.png" alt="FOUR WORD English Studio logo" class="logo">
             </a>
         </header>
@@ -22,7 +22,7 @@
                 <h2 class="c-sectiontitel-sub">お申込み・お問い合わせ内容</h2>
                 <div class="p-entryform">
                     <p class="p-entryform_text">送信が完了しました。</p>
-                    <p>この度は、お問い合わせいただき誠にありがとうございました。<br>ご返信は担当から、メールにてご返信させていただきます。<br>今しばらくお待ちくださいませ。
+                    <p>この度は、お問い合わせいただき誠にありがとうございました。<br>内容確認メールをinfo@4word-english.comから送信いたしました。<br>ご返信は担当から、メールにてご返信させていただきます。<br>迷惑メールに振り分けられることがあります。お手数ですがあわせてご確認ください。<br><br>
                     </p>
                     <a href="index.php">
                         <button class="p-from_button" type="button">トップページへ戻る</button>
