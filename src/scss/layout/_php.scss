@@ -2,6 +2,9 @@
 
 #confirm,
 #thanks {
+    .p-entryform{
+        padding: 40px 40px 60px;
+    }
     .p-entryform_text {
         margin-bottom: 40px;
         font-weight: bold;
@@ -27,10 +30,9 @@
     .element_wrap {
         label {
             margin-bottom: 15px;
-            font-weight: 500;
+            font-weight: bold;
             @include mq-up(lg) {
                 margin-bottom: 10px;
-                font-size: 13px;
             }
         }
         input[type="text"],
@@ -70,23 +72,36 @@
     background-color: $sub-color;
     .l-header {
         text-align: center;
+        background-color: #fff;
     }
     .c-sectiontitel-sub {
-        padding-top: 45px;
+        padding-top: 120px;
         text-align: center;
-        font-size: 40px;
+        font-size: 24px;
         font-weight: bold;
-        color: $main;
+        color: #fff;
+        @include mq-up(lg){
+                    padding-top: 80px;
+            font-size: 40px;
+        }
     }
     form+a {
         display: block;
         margin-top: 24px;
+        button{
+        background-color: $sub-color;
+        color: $main-font;
+        }
     }
 }
 
 #confirm .p-entryform,
 #thanks .p-entryform {
-    width: 80%;
+    width: 90%;
+    .element_wrap{
+    max-width: 820px;
+    width: 90%;
+    }
 }
 
 #thanks .p-entryform_text+p {
@@ -99,9 +114,13 @@
 #thanks button {
     position: relative;
     width: 100%;
-    max-width: 816px;
+    max-width: 464px;
     margin: auto;
     text-align: center;
-    background-color: $sub-color;
+    background-color: $main;
     border-radius: 3px;
+    @include mq-up(lg){
+            max-width: inherit;
+    width: 820px;
+    }
 }
