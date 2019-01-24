@@ -94,6 +94,7 @@
     font-weight: bold;
     color: $main-font;
     font-size: 16px;
+    transition: all .5s;
     @media screen and (min-width: 1080px) {
         font-size: 20px;
     }
@@ -148,4 +149,8 @@
             letter-spacing: 5.5px;
         }
     }
+}
+.menu_link:hover{
+    transition: all .5s;
+    background-image: linear-gradient(transparent 80%, #F2EE8C 80%);
 }

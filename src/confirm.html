@@ -5,7 +5,7 @@ mb_internal_encoding("UTF-8");
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $name = $_POST["name"];
         $email = $_POST["email"];
-        $tel = $_POST["tel"];
+        $occupation = $_POST["occupation"];
         $contact  = $_POST["contact"];
     }
 
@@ -29,7 +29,7 @@ mb_internal_encoding("UTF-8");
 	$auto_reply_text .= "お問い合わせ日時：" . date("Y-m-d H:i") . "\n";
 	$auto_reply_text .= "氏名：" . $_POST['name'] . "\n";
 	$auto_reply_text .= "メールアドレス：" . $_POST['email'] . "\n\n";
-	$auto_reply_text .= "電話番号：" . $_POST['tel'] . "\n\n";
+	$auto_reply_text .= "ご職業：" . $_POST['occupation'] . "\n\n";
 
 	$auto_reply_text .= "お問い合わせ内容：" . nl2br($_POST['contact']) . "\n\n";
 	$auto_reply_text .= "Four Word English Studio";
@@ -44,7 +44,7 @@ mb_internal_encoding("UTF-8");
 	$admin_reply_text .= "お問い合わせ日時：" . date("Y-m-d H:i") . "\n";
 	$admin_reply_text .= "氏名：" . $_POST['name'] . "\n";
 	$admin_reply_text .= "メールアドレス：" . $_POST['email'] . "\n\n";
-    $auto_reply_text .= "電話番号：" . $_POST['tel'] . "\n\n";
+    $auto_reply_text .= "ご職業：" . $_POST['occupation'] . "\n\n";
 
 	$admin_reply_text .= "お問い合わせ内容：" . nl2br($_POST['contact']) . "\n\n";
 	mb_send_mail( 'info@4word-english.com', $admin_reply_subject, $admin_reply_text, $header);
