@@ -1,4 +1,3 @@
-
 /*============================
 #solution.l-solution
 ============================*/
@@ -97,9 +96,12 @@
         }
         & .p-solution_content_tag {
             position: absolute;
-            right: -127px;
+            right: -117px;
             top: 155px;
             line-height: 1.8;
+            @include mq-up(md) {
+                right: -127px;
+            }
             @include mq-up(lg) {
                 right: -170px;
                 top: 295px;
@@ -154,9 +156,12 @@
         }
         & .p-solution_content_tag {
             position: absolute;
-            right: -170px;
-            bottom: 450px;
+            right: -160px;
+            bottom: 500px;
             line-height: 1.8;
+            @include mq-up(md) {
+                right: -170px;
+            }
             @include mq-up(lg) {
                 right: -230px;
                 bottom: 800px;
@@ -215,9 +220,12 @@
         }
         & .p-solution_content_tag {
             position: absolute;
-            right: -147px;
+            right: -137px;
             line-height: 1.8;
             bottom: 550px;
+            @include mq-up(md) {
+                right: -147px;
+            }
             @include mq-up(lg) {
                 bottom: 770px;
                 right: -200px;
@@ -275,9 +283,12 @@
         }
         & .p-solution_content_tag {
             position: absolute;
-            right: -130px;
+            right: -120px;
             bottom: 460px;
             line-height: 1.8;
+            @include mq-up(md) {
+                right: -130px;
+            }
             @include mq-up(lg) {
                 right: -179px;
                 bottom: 1290px;
@@ -436,9 +447,10 @@
         }
     }
 }
+
 @media screen and (max-width: 360px) {
-    .p-solution_content_tag,.p-solution_content_body_title:after{
+    .p-solution_content_tag,
+    .p-solution_content_body_title:after {
         display: none;
     }
-    
 }

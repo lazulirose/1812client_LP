@@ -16,7 +16,7 @@
 }
 
 .p-instructor_texttag {
-    max-width: 480px;
+    max-width: 510px;
     margin: 24px auto;
     padding: 0 5%;
     text-align: right;
@@ -25,6 +25,7 @@
     text-shadow: 1px 1px 3px rgba(#fff, .6);
     font-size: 18px;
     color: $main;
+   
     @include mq-up(lg) {
         position: relative;
         top: 180px;

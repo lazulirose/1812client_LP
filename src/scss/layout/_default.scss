@@ -2,12 +2,13 @@
 #loader.l-loading
 ============================*/
 #index {
-    position: relative;
+    position: fixed;
     overflow: hidden;
 }
 
 .l-loading {
     position: fixed;
+    display: flex;
     bottom: 0;
     z-index: 999999999999999999999999999999999999999999;
     width: 100%;

@@ -32,28 +32,23 @@
         margin-left: 15px;
         vertical-align: middle;
     }
-    @include mq-up(md) {}
 }
 
 .p-fotter_target {
     display: block;
     width: 100%;
     padding: 16px;
-    background-color: #fff;
     text-align: center;
     img {
         width: 100%;
-        max-width: 260px;
+        max-width: 100px;
         text-align: center;
     }
     @include mq-up(md) {
         width: 50%;
-        max-width: 320px;
         margin: auto;
     }
 }
-
-.p-fotter_target_link {}
 
 .p-fotter_gototop {
         width: 100%;
@@ -75,8 +70,6 @@
         }
     }
 }
-
-.p-fotter_gototop_link {}
 
 .copyright {
     display: block;

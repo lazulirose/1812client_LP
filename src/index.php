@@ -4,21 +4,22 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Four Word English Studio">
-    <meta name="keywords" content="Four Word English Studio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="Four Word English Studio | 英語を科学し最小の努力で最大の効果を出す">
+    <meta name="keywords" content="Four Word English Studio, 英語を科学し最小の努力で最大の効果を出す">
     <meta name="author" content="">
-    <meta property="og:title" content="Four Word English Studio">
+    <meta property="og:title" content="Four Word English Studio | 英語を科学し最小の努力で最大の効果を出す">
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://#{metas.url}">
     <meta property="og:image" content="http://#{metas.image}/og_image.png">
-    <meta property="og:site_name" content="Four Word English Studio">
-    <meta property="og:description" content="Four Word English Studio">
+    <meta property="og:site_name" content="Four Word English Studio | 英語を科学し最小の努力で最大の効果を出す">
+    <meta property="og:description" content="Four Word English Studio | 英語を科学し最小の努力で最大の効果を出す">
     <meta property="fb:app_id" content="任意のID">
     <meta property="twitter:card" content="任意のID">
     <meta property="twitter:creator" content="@">
-    <title>FOUR WORD English Studio</title>
-    <link rel="shortcut icon" href="">
+    <title>Four Word English Studio | 英語を科学し最小の努力で最大の効果を出す</title>
+    <link rel="shortcut icon" href="./images/logo.ico">
     <link rel="stylesheet" href="./css/style.css">
     <script>
         (function(i, s, o, g, r, a, m) {
@@ -35,6 +36,7 @@
 
         ga('create', 'UA-XXXXXXXX-Y', 'example.com');
         ga('send', 'pageview');
+
     </script>
 </head>
 
@@ -48,7 +50,7 @@
                     </a>
                 </h1>
                 <div class="c-nav_toggle" id="is-menuclose">
-                    <button onclick="navigationTrigger()"><span class="menu_button menu_tag">MENU</span><img src="./images/arrow.svg" alt=""></button></div>
+                    <button onclick="navigationTrigger()"><span class="menu_button menu_tag">MENU</span><img src="./images/arrow.svg" alt="arrow"></button></div>
                 <div class="c-menu" id="is-open">
                     <ul class="c-menu_body">
                         <li>
@@ -61,13 +63,13 @@
                             <a class="menu_link" onclick="jumpToLinks()" href="#about">ABOUT</a>
                         </li>
                         <li>
-                            <a class="menu_link" onclick="jumpToLinks()" href="#instructor">INSTRUCTOR</a>
+                            <a class="menu_link" onclick="jumpToLinks()" href="#instructor">STAFF</a>
                         </li>
                         <li>
                             <a class="menu_link" onclick="jumpToLinks()" href="#price">PRICE</a>
                         </li>
                         <li>
-                            <a class="menu_entry" onclick="jumpToLinks()" href="#form"><img src="./images/application.svg" alt=""></a>
+                            <a class="menu_entry" onclick="jumpToLinks()" href="#form"><img src="./images/application.svg" alt="申し込みボタン"></a>
                         </li>
                     </ul>
                 </div>
@@ -77,7 +79,8 @@
         <main>
             <div id="loader" class="l-loading">
                 <div id="loader-text" class="p-loading tagline">
-                    <p>TAKE THE FIRST STEP<br> Four Word English Studio</p>
+                    <p>TAKE THE FIRST STEP</p>
+                    <img src="./images/logo.png" alt="Four Word English Studio">
                 </div>
             </div>
             <div class="l-keyviasual" id="keyviasual">
@@ -103,7 +106,7 @@
 
             <div class="l-problem" id="problem">
                 <div class="c-titel js-scroll">
-                    <h2 class="motion-txt"><span class="motion-inner">WHAT ARE<br class="sp-only">PROBLEMS?</span></h2>
+                    <h2 class="motion-txt"><span class="motion-inner">WHAT ARE　<br class="sp-only">PROBLEMS?</span></h2>
                     <h3 class="motion-txt"><span class="motion-inner">フィリピンの語学学校を通して<br class="sp-only">向き合ってきた問題</span></h3>
                 </div>
                 <div class="p-problem">
@@ -121,7 +124,7 @@
                         <div class="motion-txt">
                             <h2 class="c-card_title">効果の出ない授業</h2>
                             <div class="c-card_body">
-                                <h2 class="c-card_body_title">「1日20時間の授業」では<br>英語力は上達しない？</h2>
+                                <h2 class="c-card_body_title">授業時間は長ければ長いほど<br>上達すると言うのは勘違い？</h2>
                                 <p class="c-card_body_text">人間には集中力の限界があります。<br>集中できない状態で行った3時間の勉強より、集中した状態での１時間の勉強が英語力の向上につながります。<br><br>英語力を伸ばすには授業の後も復習が必要ですが、現在のフィリピン留学は授業時間が長すぎる傾向にあります。</p>
                             </div>
                         </div>
@@ -131,7 +134,7 @@
                             <h2 class="c-card_title">モチベーションの低下</h2>
                             <div class="c-card_body">
                                 <h2 class="c-card_body_title">集中力が切れた状態の授業は<br>モチベーション低下に繋がる？</h2>
-                                <p class="c-card_body_text">集中力できない状態では授業の内容が頭に入らないだけではなく、脳を疲労させます。深夜にまで及ぶ長時間の勉強も同様です。<br><br>私たちが思いがちな「長時間の勉強で英語力が伸びる」という思い込みは結果的に勉強効率を下げています。<br><br>集中力できない状態で深夜まで勉強したとしても英語力は伸びません。努力量に比例して結果を感じられないことがモチベーション低下に繋がり英語を嫌いになってしまうこともあります。</p>
+                                <p class="c-card_body_text">集中できない状態では授業の内容が頭に入らないだけではなく、脳を疲労させます。深夜にまで及ぶ長時間の勉強も同様です。<br><br>私たちが思いがちな「長時間の勉強で英語力が伸びる」という思い込みは結果的に勉強効率を下げています。<br><br>集中力できない状態で深夜まで勉強したとしても英語力は伸びません。努力量に比例して結果を感じられないことがモチベーション低下に繋がり英語を嫌いになってしまうこともあります。</p>
                             </div>
                         </div>
                     </div>
@@ -140,8 +143,9 @@
                             <h2 class="c-card_title">授業と講師の質</h2>
                             <div class="c-card_body">
                                 <h2 class="c-card_body_title">英語を話せるのと<br>教えるスキルは別のモノ？</h2>
-                                <p class="c-card_body_text">春休みと夏休みシーズンは学生の数が一気に増えます。この時期は多くの学校が講師を必要としており、学校間で講師の取合いが起こっています。<br><br>講師の数が足りないために、スキルの足りない数合わせの講師が採用されることも珍しくありません。<br><br>それによって、今まで「フィリピン留学は講師の質の差が激しい」と言われてきました。英語を教えるためには英語が話せるだけではなく教えるためのスキルを必要としています。</p>
-
+                                <p class="c-card_body_text">
+                                    英語を流暢に話せるからということで即講師として採用している学校も多くあります。しかし、英語が話せる＝良い英語講師ではありません。我々が日本語は流暢に話せますが日本語講師としてのスキルが無いのと同じことで、しっかりした英語講師になるには経験やトレーニングが必須です。<br><br>しかし、特に講師が足りなくなる繁忙期は単に英語が話せるだけの英語教授法のスキルを持たない数合わせの講師が増える傾向にあります。彼らは正しい文法知識も持っていないので学生からの質問にも正しく答えることができません。<br><br>英語講師は英語力が高いだけではなく、英語教授法をしっかり身につけている必要があります。
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -150,7 +154,7 @@
                             <h2 class="c-card_title">頼りになる人がいない</h2>
                             <div class="c-card_body">
                                 <h2 class="c-card_body_title">日本人の英語初心者にとって<br>効果的な学習方法がある？</h2>
-                                <p class="c-card_body_text">日本人スタッフの経験を元にしたアドバイスとサポートでは、ひとりひとりに適した学習サポートに対応することができません。<br><br>授業内容を自分で決められる学校もありますが、実際には初級者が自分自身に見合った授業内容を組むことは非常に難しく、教えているフィリピン人とは効率のいい勉強方法が異なります。<br><br>効果の出にくいカリキュラムのまま授業が進んでしまうこともよくある問題で、フィリピン留学は本当の意味で学習面のサポートまで行き届いている学校がほぼありませんでした。
+                                <p class="c-card_body_text">英語講師経験や英語の勉強方法についてのしっかりした知識を持たない日本人スタッフでは、自分の経験からのみのアドバイスとなってしまい、ひとりひとりに適した学習サポートに対応することができません。<br><br>授業内容を自分で決められる学校もありますが、実際には初級者が自分自身に見合った授業内容を組むことは非常に難しく、教えているフィリピン人とは効率のいい勉強方法が異なります。<br><br>効果の出にくいカリキュラムのまま授業が進んでしまうこともよくある問題で、フィリピン留学は本当の意味で学習面のサポートまで行き届いている学校がほぼありませんでした。
                                 </p>
                             </div>
                         </div>
@@ -166,18 +170,18 @@
                 <div class="p-solution_container">
                     <div class="fadein">
                         <div class="p-solution_content">
-                            <img src="./images/solution-1.png" alt="" class="p-solution_content_image fadein">
+                            <img src="./images/solution-1.png" alt="短時間授業でしっかり集中" class="p-solution_content_image fadein">
                             <p class="p-solution_content_text fadein">金曜日は振返りや授業外学習<br>スピーチ・課題発表・テスト</p>
                             <p class="p-solution_content_tag">
                                 <span># コースを迷わない</span><span># マンツー4時間</span><span># グループ2時間</span><br><span># 自習不要</span><span># レベルに見合った事業内容を提案</span>
                             </p>
                             <div class="p-solution_content_body">
                                 <h2 class="p-solution_content_body_title fadein">短時間授業でしっかり集中</h2>
-                                <p class="p-solution_content_body_text fadein">英語学校では授業数に応じて値段が変わるのが一般的ですが、実際は授業数が英語力に直結するわけではありません。<br><br>Four Word English Studioでは、時間の使い方を考え抜いたカリキュラムによって短時間で効果的な勉強を可能にしました。<br><br>授業は基礎からしっかり行い、決して楽ではありませんが、あなたに合った効果的な授業数を提供するためコース選びに迷う必要がありません。</p>
+                                <p class="p-solution_content_body_text fadein">英語学校では授業数に応じて値段が変わるのが一般的ですが、実際は授業数が英語力に直結するわけではありません。<br><br>Four Word English Studioでは授業時間数ではなく英語力の伸びをお約束しています。ですので時間の使い方を考え抜いたカリキュラムによって短時間で効果的な勉強を可能にしました。<br><br>授業は基礎からしっかり行い、決して楽ではありませんが、あなたに合った効果的な授業数を提供するためコース選びで迷う必要がありません。</p>
                             </div>
                         </div>
                         <div class="p-solution_content">
-                            <img src="./images/solution-2.png" alt="" class="p-solution_content_image fadein">
+                            <img src="./images/solution-2.png" alt="遊ぶように英語を学ぶ" class="p-solution_content_image fadein">
                             <p class="p-solution_content_text fadein">第二言語習得論＋６年間の経験<br>効率的なカリキュラム</p>
                             <p class="p-solution_content_tag">
                                 <span># 次週に備えたリフレッシュ</span><span># 門限なし</span><span># 欧米留学スタイル</span><br><span># 週末のアクティビティやパーティ</span><span># 実生活を通して海外ライフを満喫</span>
@@ -192,25 +196,25 @@
                         </div>
                         <div class="p-solution_content">
 
-                            <img src="./images/solution-3.png" alt="" class="p-solution_content_image fadein">
+                            <img src="./images/solution-3.png" alt="プロフェッショナルが学習サポートを担当" class="p-solution_content_image fadein">
                             <p class="p-solution_content_text fadein">プロフェッショナルからの<br>個人に合った学習アドバイス</p>
                             <p class="p-solution_content_tag"><span># 勉強方法に困らない</span><span># 相談相手の居る学校</span><span># 第二言語習得論</span><br><span># 科学的に証明された勉強法</span><span># 日本人英語教師</span></p>
                             <div class="p-solution_content_body">
                                 <h2 class="p-solution_content_body_title fadein">プロフェッショナルが<br>学習サポートを担当</h2>
-                                <p class="p-solution_content_body_text fadein">Four Word English Studioでは、英語講師の経験を持つ第二言語習得論学習者が学習サポートも行っています。<br><br> 彼らは英語力が高いだけではありません。プロの翻訳家としも活躍し、VIPへの直接指導も行ってきた経験豊富なプロフェッショナルたちが直接あなたの学習相談を行い、学習のサポートを担当しています。
-                                    <br><br> 専門の知識を持たない場合、手探りに勉強方法を試して基調な留学滞在中の時間使ってしまうこともあります。しかし、プロフェッショナルがサポートすることによって１人１人に合ったベストな学習方法を学習を始める最初の段階から提案することができます。
+                                <p class="p-solution_content_body_text fadein">Four Word English Studioでは、英語講師の経験を持つスタッフが、第二言語習得論などの知見に基づいた学習サポートを行っています。<br><br> 彼らは英語力が高いだけではありません。プロの翻訳家としも活躍し、VIPへの直接指導も行ってきた経験豊富なプロフェッショナルたちが直接あなたの学習相談を行い、学習のサポートを担当しています。
+                                    <br><br> 専門の知識を持たない場合、手探りに勉強方法を試して貴重な留学滞在中の時間使ってしまうこともあります。しかし、プロフェッショナルがサポートすることによって１人１人に合ったベストな学習方法を学習を始める最初の段階から提案することができます。
                                 </p>
 
                             </div>
                         </div>
                         <div class="p-solution_content">
 
-                            <img src="./images/solution-4.png" alt="" class="p-solution_content_image fadein">
+                            <img src="./images/solution-4.png" alt="他にはないほどに、徹底した質の高さ" class="p-solution_content_image fadein">
                             <p class="p-solution_content_text fadein">一貫性のある<br>クオリティコントールを実現</p>
                             <p class="p-solution_content_tag"><span># 日本人に向け授業</span><span># 品質保持</span><span># 高品質</span><br><span># 第二言語習得論のプロフェショナル監修カリキュラム</span></p>
                             <div class="p-solution_content_body">
                                 <h2 class="p-solution_content_body_title fadein">他にはないほどに、<br>徹底した質の高さ</h2>
-                                <p class="p-solution_content_body_text fadein">講師のトレーニングは週一回程度が主流です。しかし、私たちは毎日2時間のトレーニングを第二言語習得論のプロフェッショナル監修の日本人特化型のカリキュラムに沿って行っています。<br><br> FOUR WORD English Studioでは、数合わせの講師は雇用しません。トレーニングを積んだ精鋭講師陣だけが授業を担当しています。<br><br> 提供する授業の質にこだわり、講師と授業の品質保持に力を入れた徹底されたクオリティの授業が自慢です。
+                                <p class="p-solution_content_body_text fadein">講師のトレーニングは週一回程度が主流です。しかし、私たちは毎日2時間のトレーニングを第二言語習得論のプロフェッショナル監修の日本人特化型のカリキュラムに沿って行っています。<br><br> Four Word English Studioでは、数合わせの講師は雇用しません。トレーニングを積んだ精鋭講師陣だけが授業を担当しています。<br><br> 提供する授業の質にこだわり、講師と授業の品質保持に力を入れた徹底されたクオリティの授業が自慢です。
                                 </p>
                             </div>
                         </div>
@@ -231,27 +235,26 @@
                         ストイック✕自由<br>第二言語習得論
                     </h1>
                     <div class="fadein">
-                        <img src="./images/about-1.png" alt="" class="p-about_container_image">
+                        <img src="./images/about-1.png" alt=" ストイック✕自由　第二言語習得論" class="p-about_container_image">
                     </div>
                 </div>
                 <div class="p-about_description">
                     <h2 class="p-about_description_highlight fadein">スパルタ校とは違います</h2>
-                    <p class="p-about_description_highlight fadein"><em>Four Word English Studioはスパルタ校ではありません。</em><br><em>ただ単に厳しくするのではなく第二言語習得論を元に設計された効率を重視した「ストイックさ」と「自由さ」を備えた学校です。</em>
+                    <p class="p-about_description_highlight fadein"><em>Four Word English Studioはスパルタ校ではありません。</em><br><em>ただ単に厳しくするのではなく第二言語習得論と6年間の英語学校で得た経験をもとに設計された効率を重視した「ストイックさ」と「自由さ」を備えた学校です。</em>
                     </p>
                     <p class="p-about_description_text fadein">初級者が短期間で次のステップへ進めるようにと考えられたカリキュラムを採用しています。3ヶ月間、カリュキュラムに沿った学習を行った後はスムースに中上級のステップ進むことができるようになります。<br><br>
-                        <strong class="p-about_description_text_next fadein">次のステップも<br class="sp-only">サポートします</strong><br><br>Four Word English Studioでは、キャンパス内にフィリピン＆オーストラリア専門留学エージェントを備え、その他オーストラリア現地にも日本人スタッフ常駐のサポートオフィスを構えています。 卒業後、外国人の学生が多い環境や試験対策のために他校への転校やオーストラリアのワーキングホリデーのサポートも万全です。<br><br>これまで私たちは、語学学校を通して初級者の悩みに触れてきました。 初級者がもっと英語に触れやすい環境を作りたい一心で、初級者が留学するために最適な環境をこだわり抜いて揃えました。
+                        <strong class="p-about_description_text_next fadein">次のステップも<br class="sp-only">サポートします</strong><br><br>Four Word English Studioでは、キャンパス内にフィリピン＆オーストラリア専門留学エージェントを備え、その他オーストラリア現地にも日本人スタッフ常駐のサポートオフィスを構えています。 卒業後、外国人の学生が多い環境や試験対策のために他校への転校やオーストラリアのワーキングホリデーのサポートも万全です。<br><br>これまで私たちは、6年間の語学学校運営を通して初級者の悩みに触れてきました。 初級者がもっと英語に触れやすい環境を作りたい一心で、初級者が留学するために最適な環境をこだわり抜いて揃えました。
                     </p>
                 </div>
                 <div class="p-about_environment">
                     <div class="fadein">
-                        <img src="./images/about-2.png" alt="" class="p-about_environment_image-australia">
+                        <img src="./images/about-2.png" alt="オーストラリア" class="p-about_environment_image-australia">
                     </div>
                     <h3 class="p-about_environment_highlight-top fadein">こだわり抜いた学習環境</h3>
                     <div class="fadein">
-                        <img src="./images/about-3.png" alt="" class="p-about_environment_image-top">
+                        <img src="./images/about-3.png" alt="学習環境" class="p-about_environment_image-top">
                     </div>
-                    <img src="./images/about-4.png" alt="" class="p-about_environment_image-right fadein">
-                    <img src="./images/about-5.png" alt="" class="p-about_environment_image-left fadein">
+                    <img src="./images/about-4.png" alt="11階からの景色" class="p-about_environment_image-right fadein">
                     <h2 class="p-about_environment_highlight-bottom fadein">「学校」らしくない空間</h2>
                     <p class="p-about_environment_text fadein">遊ぶように学んでほしいから施設にもこだわりました。<br> 従来の「学校らしさ」から外れて、まるで街のカフェで勉強するように開放的でおしゃれな空間の中で授業を受けます。
                         <br><br> 少しでも英語学習のストレスを減らしたくて、いるだけで思わず楽しくなるような空間をご用意してお待ちしています。
@@ -263,33 +266,33 @@
             <!-- /.l-about -->
             <div class="l-sales">
                 <div class="p-sales">
-                    <img src="./images/refund.png" alt="" class="fadein">
-                    <button class="p-sales_button button fadein">パンフレットのダウンロードはこちら</button>
+                    <img src="./images/refund.png" alt="返金制度" class="fadein">
+                    <a href="./pdf/FourWord2019.pdf"><button class="p-sales_button button fadein">パンフレットのダウンロードはこちら</button></a>
                 </div>
             </div>
             <!-- /.l-sales -->
             <div class="l-instructor" id="instructor">
                 <div class="c-titel js-scroll">
-                    <h2 class="motion-txt">INSTRUCTOR</h2>
-                    <h3 class="motion-txt">第二言語習得論 講師紹介</h3>
+                    <h2 class="motion-txt">ENGLISH STAFF</h2>
+                    <h3 class="motion-txt">日本人の英語スペシャリスト</h3>
                 </div>
                 <div class="p-instructor_bg">
                     <h3 class="p-instructor_texttag fadein">
                         日本人の弱点を知り尽くした<br>Four Word English Studioの<br class="sp-only">日本人スペシャリスト
                     </h3>
                     <div class="p-instructor-yumi">
-                        <img src="./images/instructor-yumi.png" alt="" class="p-instructor_image-yumi fadein">
+                        <img src="./images/instructor-yumi.png" alt="Yumi" class="p-instructor_image-yumi fadein">
                         <div class="p-about_description-yumi motion-txt">
                             <h2 class="p-instructor_yumi fadein">Yumi</h2>
                             <h3 class="p-instructor_position fadein">Four Word English Studio
                                 <span>総責任者</span></h3>
-                            <p class="p-about_instructor_description fadein">26歳までは英語と無縁の生活を送るも一念発起し、超ビギナー状態から3ヶ月のセブ島留学を経験し英語教育に強い興味をもつ。<br> 28歳でセブの語学学校TARGET Global English Academyの立ち上げメンバーとして参画する。<br><br> 29歳で始めてTOEIC900点を初クリア、その後965点を取得。<br> その後、第二言語習得理論、音声学、英語教授法を早稲田大学で学び、語学系専門学校やエグゼクティブ専用TOEICスクールで英語講師として活躍。
-                                <br><br> これまでに、初級者の学生からGoogleやAccentureなど超グローバル企業の社員まで、幅広い生徒を担当の経験をもち日本人の英語の弱点を知り尽くし、日本人にとって効果的な英語学習法を提案し続けている。
+                            <p class="p-about_instructor_description fadein">26歳までは英語と無縁の生活を送るも一念発起し、ビギナー状態から3ヶ月のセブ島留学を経験し英語教育に強い興味をもつ。<br> 28歳でセブの語学学校TARGET Global English Academyの立ち上げメンバーとして参画する。<br><br> 29歳で始めてTOEIC900点を初クリア、その後965点を取得。<br> その後、第二言語習得理論、音声学、英語教授法を早稲田大学で学び、語学系専門学校やエグゼクティブ専用TOEICスクールで英語講師として活躍。
+                                <br><br> これまでに、初級者の学生からGoogleやAccentureなどグローバル企業の社員まで、幅広い生徒を担当の経験をもち日本人の英語の弱点を知り尽くし、日本人にとって効果的な英語学習法を提案し続けている。
                             </p>
                         </div>
                     </div>
                     <div class="p-instructor-scott">
-                        <img src="./images/instructor-scott.png" alt="" class="p-instructor_image-scott fadein">
+                        <img src="./images/instructor-scott.png" alt="Scott" class="p-instructor_image-scott fadein">
                         <div class="p-about_description-scott motion-txt">
                             <h2 class="p-instructor_scott fadein">Scott</h2>
                             <h3 class="p-instructor_position fadein">Four Word English Studio<span>カリキュラムデベロッパー</span></h3>
@@ -310,18 +313,20 @@
                     </div>
                     <div class="p-price">
                         <div class="p-price-table fadein">
-                            <img src="./images/price-1.png" alt="">
+                            <img src="./images/price-1.png" alt="料金表">
 
                         </div>
                         <div class="p-price-campaign fadein">
-                            <img src="./images/price-2.png" alt="">
+                            <img src="./images/price-2.png" alt="割引">
 
                         </div>
+                        <p>※おすすめの4週のみ料金表示をしています。<br> 4週以外の期間についての料金詳細はパンフレット（PDF）をご確認ください。
+                        </p>
                         <div class="p-price-refund fadein fadein">
-                            <img src="./images/refund.png" alt="">
+                            <img src="./images/refund.png" alt="返金制度">
 
                         </div>
-                        <button class="p-price_button button fadein">パンフレットのダウンロードはこちら</button>
+                        <a href="./pdf/FourWord2019.pdf"><button class="p-price_button button fadein">パンフレットのダウンロードはこちら</button></a>
                     </div>
                 </div>
                 <!-- /.l-price -->
@@ -347,7 +352,7 @@
                             </div>
                             <div class="element_wrap motion-txt">
                                 <label>お問い合わせ内容</label>
-                                <textarea name="contact" placeholder="簡単な自己紹介をご記入ください。"><?php if( !empty($_POST['contact']) ){ echo $_POST['contact']; } ?></textarea>
+                                <textarea name="contact" placeholder="ご質問、ご希望などをご記入ください。"><?php if( !empty($_POST['contact']) ){ echo $_POST['contact']; } ?></textarea>
                             </div>
                             <input class="p-from_button" type="submit" name="btn_confirm" value="送信">
                         </form>
@@ -361,14 +366,14 @@
                 <li class="p-fotter_sns_icon">
                     <a href="">
                         <svg xmlns="http://www.w3.org/2000/svg" width="61.071" height="59.605" viewBox="0 0 61.071 59.605"><g transform="translate(-107 -17282.916)"><path d="M67.071,57.326A8.382,8.382,0,0,1,58.589,65.6H14.482A8.381,8.381,0,0,1,6,57.326V14.278A8.381,8.381,0,0,1,14.482,6H58.589a8.381,8.381,0,0,1,8.482,8.278Z" transform="translate(101 17276.916)" fill="#fff"/><path d="M42.478,33.562h-5.77V55.838H28.141V33.562H23V26.708h5.141v-4.13c.007-6.011,2.5-9.578,9.585-9.578h5.837v6.854H39.647c-2.758,0-2.938,1.031-2.938,2.952v3.9h6.854Z" transform="translate(113.331 17279.076)" fill="#004A7B"/></g>
-                            </svg>
+                        </svg>
                     </a>
                 </li>
                 <li class="p-fotter_sns_icon">
                     <a href="">
                         <svg xmlns="http://www.w3.org/2000/svg" width="61.071" height="61.07" viewBox="0 0 61.071 61.07">
                             <path d="M21.044,3A18.061,18.061,0,0,0,3,21.044V46.027A18.061,18.061,0,0,0,21.044,64.071H46.027A18.061,18.061,0,0,0,64.071,46.027V21.044A18.061,18.061,0,0,0,46.027,3ZM50.191,14.1a2.776,2.776,0,1,1-2.776,2.776A2.784,2.784,0,0,1,50.191,14.1ZM33.535,18.268A15.268,15.268,0,1,1,18.268,33.535,15.277,15.277,0,0,1,33.535,18.268Zm0,2.776A12.492,12.492,0,1,0,46.027,33.535,12.511,12.511,0,0,0,33.535,21.044Z" transform="translate(-3 -3)" fill="#fff"/>
-                            </svg>
+                        </svg>
                     </a>
                 </li>
                 <li class="p-fotter_sns_icon">
@@ -380,7 +385,7 @@
                 </li>
             </ul>
             <div class="p-fotter_target">
-                <a href="http://target-english.org/" class="p-fotter_target_link"><img src="./images/target.png" alt="「伸びる」セブ島留学ならTARGET Global English Academy"></a>
+                <a href="http://target-english.org/" class="p-fotter_target_link" target="blank"><img src="./images/target.png" alt="「伸びる」セブ島留学ならTARGET Global English Academy"></a>
             </div>
             <div class="p-fotter_gototop">
                 <a href="#index" class="p-fotter_gototop_link"><img src="./images/top.png" alt="arrow"></a>
@@ -389,7 +394,7 @@
         </fotter>
     </div>
     <script src="./js/script.js"></script>
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         window.onload = function() {
             var lastWidget = document.getElementById("index");
@@ -409,7 +414,7 @@
             if (x.style.display === "block") {
                 x.style.display = "none";
                 y.classList.remove("close-anime");
-                y.classList.add("open-anime");
+                y.classList.add("open-anime").fadeToggle(500);
 
             } else {
                 x.style.display = "block";
@@ -432,6 +437,7 @@
                 y.classList.add("close-anime");
             }
         }
+
         function fadeOut(node, duration) {
             node.style.opacity = 1;
             const start = performance.now();
@@ -466,9 +472,8 @@
                 return;
             }
         });
-    </script>
-    <script>
-        var EffectH = 300;
+        //jquery
+        var EffectH = 100;
         $(window).on('scroll load', function() {
             var scTop = $(this).scrollTop();
             var scBottom = scTop + $(this).height();
@@ -492,12 +497,13 @@
                     var elemPos = $(this).offset().top;
                     var scroll = $(window).scrollTop();
                     var windowHeight = $(window).height();
-                    if (scroll > elemPos - windowHeight + 200) {
+                    if (scroll > elemPos - windowHeight + 100) {
                         $(this).addClass('scrollin');
                     }
                 });
             });
         });
+
     </script>
 </body>
 

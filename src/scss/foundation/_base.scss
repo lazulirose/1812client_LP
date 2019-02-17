@@ -19,15 +19,32 @@ body {
     -webkit-text-size-adjust: 100%;
     background: $main url(./../images/bg-1.jpg) no-repeat center center;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed;  
     @include mq-up(lg) {
         font-size: 16px !important;
     }
 }
+body::before {
+    @include mq-down(lg){ 
+  background:url(./../images/bg-1-sp.jpg) no-repeat center center;
+  background-size: 100% auto;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 108px;
+  content: "";
+  z-index: -1;
+    }
+}   
+
 
 main {
     position: relative;
     display: block;
+
 }
 
 a {
@@ -49,11 +66,20 @@ input {
 label {
     display: block;
 }
-h1,h2,h3,h4,h5,h6,p,li,a,small{
-  -o-transform: rotate(0.028deg);
-   -ms-transform: rotate(0.028deg);
-   -moz-transform: rotate(0.028deg);
-   -webkit-transform: rotate(0.028deg);
-   transform: rotate(0.028deg);
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+small {
+    -o-transform: rotate(0.028deg);
+    -ms-transform: rotate(0.028deg);
+    -moz-transform: rotate(0.028deg);
+    -webkit-transform: rotate(0.028deg);
+    transform: rotate(0.028deg);
 }

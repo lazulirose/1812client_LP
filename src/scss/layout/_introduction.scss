@@ -51,16 +51,6 @@
             font-size: 40px;
         }
     }
-    //    &::after {
-    //        content: "";
-    //        display: block;
-    //        position: absolute;
-    //        bottom: 36px;
-    //        z-index: -1;
-    //        width: 315px;
-    //        height: 12px;
-    //        background-color: $sub-color;
-    //    }
 }
 
 .p-introduction-second {
@@ -71,7 +61,6 @@
     padding-bottom: 60px;
     font-size: 100%;
     @include text;
-    //@include text-shadow;
     color: $main;
     @include mq-up(md) {
         width: 40%;
@@ -80,19 +69,4 @@
         width: 40%;
         font-size: 18px;
     }
-//    &::before {
-//        content: "";
-//        display: inline-block;
-//        position: absolute;
-//        z-index: -1;
-//        top: -70px;
-//        left: 10px;
-//        width: 120px;
-//        height: 120px;
-//        transform: rotate(-15deg);
-//        background: url(./../images/philippines.png) no-repeat;
-//        background-size: contain;
-//        vertical-align: middle;
-//        opacity: .45;
-//    }
 }

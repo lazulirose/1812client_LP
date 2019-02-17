@@ -15,8 +15,11 @@
     }
     img {
         display: block;
-        width: 90%;
+        width: 100%;
         margin: auto;
+        @include mq-up(md){
+            width: 90%;
+        }
     }
 }
 

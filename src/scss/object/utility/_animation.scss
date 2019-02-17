@@ -17,13 +17,17 @@
     animation: keyviasual 7s;
 }
 
-.p-tagline-en, .p-tagline-jp {
-     -webkit-animation: text-tag 7s;
+.p-tagline-en,
+.p-tagline-jp {
+    -webkit-animation: text-tag 7s;
     animation: text-tag 7s;
 }
+
+
 /*****-------------------------------
     Toggle
 -------------------------------*****/
+
 .c-nav_toggle {
     position: fixed;
     z-index: 999999;
@@ -56,6 +60,7 @@
         background-color: rgba(#fff, .9);
     }
 }
+
 .menu__button {
     position: absolute;
     top: -20px;
@@ -65,30 +70,19 @@
     height: 44px;
 }
 
-.open-anime.c-nav_toggle::before {
-    animation: menu-bar01 .75s forwards;
+.close-anime+#is-open {
+    animation: in .4s;
 }
 
-.open-anime {
-    .c-menu {
-        animation: test .8s;
-    }
-}
-
-.open-anime.c-nav_toggle {
-    transition: .8s;
+.open-anime+#is-open {
+    animation: out .4s;
 }
 
 .c-menu {
     transform: translateX(0);
 }
 
-.close-anime .c-menu {
-    animation: test .8s;
-}
-
 .close-anime.c-nav_toggle {
-    transition: .8s;
     & img {
         display: block;
         background-color: transparent;
@@ -97,9 +91,12 @@
         display: none;
     }
 }
+
+
 /*****-------------------------------
     Scroll
 -------------------------------*****/
+
 .motion-txt {
     display: inherit;
     position: relative;
@@ -109,7 +106,7 @@
 .motion-txt:after {
     content: '';
     position: absolute;
-    z-index: 9999999999999;
+    z-index: 999999999;
     opacity: 1;
     left: 0;
     top: 0;
@@ -144,21 +141,22 @@
     opacity: 1;
 }
 
+
 /*****-------------------------------
     Loading style
 -------------------------------*****/
 
 .p-loading {
-    display: flex;
     p {
         display: block;
         position: absolute;
+        z-index: 100;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
         width: 100%;
-        max-width: 320px;
+        max-width: 380px;
         height: 40px;
         margin: auto;
         line-height: 2;
@@ -178,6 +176,24 @@
             font-size: 60px;
         }
     }
+    img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        margin: auto;
+        padding-top: 130px;
+        max-width: 180px;
+        opacity: .1;
+        animation: text-down 6.3s;
+        @include mq-up(lg) {
+            padding-top: 112px;
+            max-width: 350px
+        }
+    }
+
 }
 
 .p-loading::before {
@@ -189,18 +205,17 @@
     left: 0;
     z-index: 99999;
     width: 350px;
-    height: 50px;
+    height: 400px !important;
     margin: auto;
     background-color: #fff;
     content: "";
     animation: text-in 7s ease-in-out .6s;
     @include mq-down(md) {
         bottom: 20%;
-        
     }
     @include mq-up(lg) {
         width: 800px;
-        height: 120px !important;
+        height: 350px !important;
         animation: text-in-lg 5s ease-in-out .6s;
     }
 }
@@ -210,7 +225,23 @@
     menu
 -------------------------------*****/
 
+@keyframes in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
+@keyframes out {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 
 
 /*****-------------------------------
@@ -272,13 +303,13 @@
     80% {
         transform: translateY(25px);
         opacity: 0;
-
     }
     100% {
         transform: translateY(0);
         opacity: 1;
     }
 }
+
 @keyframes text-tag {
     0% {
         transform: translateX(50px);
@@ -295,11 +326,12 @@
 }
 
 .fadein {
-    opacity : 0;
-    transform : translate(0, 50px);
-    transition : all 300ms;
+    opacity: 0;
+    transform: translate(0, 50px);
+    transition: all .3s;
 }
+
 .fadein.scrollin {
-    opacity : 1;
-    transform : translate(0, 0);
+    opacity: 1;
+    transform: translate(0, 0);
 }

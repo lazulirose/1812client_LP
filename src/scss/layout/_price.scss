@@ -1,13 +1,12 @@
-
 /*============================
 #price.l-price
 ============================*/
+
 .p-bg {
     position: relative;
     z-index: 9999;
     -webkit-text-size-adjust: 100%;
     background: #fff url(./../images/bg-2.png) repeat center center;
-
 }
 
 .l-price {
@@ -15,13 +14,16 @@
     z-index: auto;
     padding-bottom: 60px;
     background-color: rgba(#fff, .4);
-    @include mq-up(lg)  {
+    @include mq-up(lg) {
         padding-bottom: 160px;
     }
     img {
         display: block;
-        width: 90%;
+        width: 100%;
         margin: auto;
+        @include mq-up(md) {
+            width: 90%;
+        }
     }
 }
 
@@ -41,8 +43,8 @@
 
 .p-price {
     margin: 80px 5%;
-    
 }
+
 .p-price-table {}
 
 .p-price-image {
@@ -54,17 +56,36 @@
 
 // TODO
 .p-price-table {
-   margin-bottom: 48px;
-}
-
-.p-price-campaign {
     margin-bottom: 48px;
 }
 
-.p-price-refund {
-   // display: none;
+.p-price-campaign {
+    &+p {
+        position: relative;
+        padding: 24px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.6;
+        color: $main;
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 20%;
+            margin: auto;
+            height: 3px;
+            background-color: $accent;
+        }
+    }
 }
 
+.p-price-refund {
+    // display: none;
+}
 
 .p-price_button {
     position: absolute;
@@ -73,7 +94,7 @@
     right: 0;
     z-index: 9999;
     margin: auto;
-    @include mq-up(lg)  {
-          bottom: 80px;
+    @include mq-up(lg) {
+        bottom: 80px;
     }
 }
